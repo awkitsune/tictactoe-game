@@ -12,74 +12,76 @@ namespace tic_tac_toe
 {
     public partial class Form1 : Form
     {
-        Random rnd_icon = new Random();
-        public void UpdateField(int[,] field) //make field cleaning
+        Move move = new Move();
+        ttt_field field = new ttt_field();
+
+        bool isPlaying = false;
+        public void UpdateField(int[,] gameField) //make field cleaning
         {
-            switch (field[0, 0])
+            switch (gameField[0, 0])
             {
-                case 0: break;
-                case 1: button_0_0.Image = Image.FromFile($"cross_{rnd_icon.Next(1, 3)}.png"); break;
-                case 2: button_0_0.Image = Image.FromFile($"zero_{rnd_icon.Next(1, 3)}.png"); break;
+                case 0: button_0_0.Image = null; break;
+                case 1: button_0_0.Image = Image.FromFile($"cross_{field.GetIcon(0, 0)}.png"); break;
+                case 2: button_0_0.Image = Image.FromFile($"zero_{field.GetIcon(0, 0)}.png"); break;
             }
-            switch (field[1, 0])
+            switch (gameField[1, 0])
             {
-                case 0: break;
-                case 1: button_1_0.Image = Image.FromFile($"cross_{rnd_icon.Next(1, 3)}.png"); break;
-                case 2: button_1_0.Image = Image.FromFile($"zero_{rnd_icon.Next(1, 3)}.png"); break;
+                case 0: button_1_0.Image = null; break;
+                case 1: button_1_0.Image = Image.FromFile($"cross_{field.GetIcon(1, 0)}.png"); break;
+                case 2: button_1_0.Image = Image.FromFile($"zero_{field.GetIcon(1, 0)}.png"); break;
             }
-            switch (field[2, 0])
+            switch (gameField[2, 0])
             {
-                case 0: break;
-                case 1: button_2_0.Image = Image.FromFile($"cross_{rnd_icon.Next(1, 3)}.png"); break;
-                case 2: button_2_0.Image = Image.FromFile($"zero_{rnd_icon.Next(1, 3)}.png"); break;
+                case 0: button_2_0.Image = null; break;
+                case 1: button_2_0.Image = Image.FromFile($"cross_{field.GetIcon(2, 0)}.png"); break;
+                case 2: button_2_0.Image = Image.FromFile($"zero_{field.GetIcon(2, 0)}.png"); break;
             }
-            switch (field[0, 1])
+            switch (gameField[0, 1])
             {
-                case 0: break;
-                case 1: button_0_1.Image = Image.FromFile($"cross_{rnd_icon.Next(1, 3)}.png"); break;
-                case 2: button_0_1.Image = Image.FromFile($"zero_{rnd_icon.Next(1, 3)}.png"); break;
+                case 0: button_0_1.Image = null; break;
+                case 1: button_0_1.Image = Image.FromFile($"cross_{field.GetIcon(0, 1)}.png"); break;
+                case 2: button_0_1.Image = Image.FromFile($"zero_{field.GetIcon(0, 1)}.png"); break;
             }
-            switch (field[1, 1])
+            switch (gameField[1, 1])
             {
-                case 0: break;
-                case 1: button_1_1.Image = Image.FromFile($"cross_{rnd_icon.Next(1, 3)}.png"); break;
-                case 2: button_1_1.Image = Image.FromFile($"zero_{rnd_icon.Next(1, 3)}.png"); break;
+                case 0: button_1_1.Image = null; break;
+                case 1: button_1_1.Image = Image.FromFile($"cross_{field.GetIcon(1, 1)}.png"); break;
+                case 2: button_1_1.Image = Image.FromFile($"zero_{field.GetIcon(1, 1)}.png"); break;
             }
-            switch (field[2, 1])
+            switch (gameField[2, 1])
             {
-                case 0: break;
-                case 1: button_2_1.Image = Image.FromFile($"cross_{rnd_icon.Next(1, 3)}.png"); break;
-                case 2: button_2_1.Image = Image.FromFile($"zero_{rnd_icon.Next(1, 3)}.png"); break;
+                case 0: button_2_1.Image = null; break;
+                case 1: button_2_1.Image = Image.FromFile($"cross_{field.GetIcon(2, 1)}.png"); break;
+                case 2: button_2_1.Image = Image.FromFile($"zero_{field.GetIcon(2, 1)}.png"); break;
             }
-            switch (field[0, 2])
+            switch (gameField[0, 2])
             {
-                case 0: break;
-                case 1: button_0_2.Image = Image.FromFile($"cross_{rnd_icon.Next(1, 3)}.png"); break;
-                case 2: button_0_2.Image = Image.FromFile($"zero_{rnd_icon.Next(1, 3)}.png"); break;
+                case 0: button_0_2.Image = null; break;
+                case 1: button_0_2.Image = Image.FromFile($"cross_{field.GetIcon(0, 2)}.png"); break;
+                case 2: button_0_2.Image = Image.FromFile($"zero_{field.GetIcon(0, 2)}.png"); break;
             }
-            switch (field[1, 2])
+            switch (gameField[1, 2])
             {
-                case 0: break;
-                case 1: button_1_2.Image = Image.FromFile($"cross_{rnd_icon.Next(1, 3)}.png"); break;
-                case 2: button_1_2.Image = Image.FromFile($"zero_{rnd_icon.Next(1, 3)}.png"); break;
+                case 0: button_1_2.Image = null; break;
+                case 1: button_1_2.Image = Image.FromFile($"cross_{field.GetIcon(1, 2)}.png"); break;
+                case 2: button_1_2.Image = Image.FromFile($"zero_{field.GetIcon(1, 2)}.png"); break;
             }
-            switch (field[2, 2])
+            switch (gameField[2, 2])
             {
-                case 0: break;
-                case 1: button_2_2.Image = Image.FromFile($"cross_{rnd_icon.Next(1, 3)}.png"); break;
-                case 2: button_2_2.Image = Image.FromFile($"zero_{rnd_icon.Next(1, 3)}.png"); break;
+                case 0: button_2_2.Image = null; break;
+                case 1: button_2_2.Image = Image.FromFile($"cross_{field.GetIcon(2, 2)}.png"); break;
+                case 2: button_2_2.Image = Image.FromFile($"zero_{field.GetIcon(2, 2)}.png"); break;
             }
         }
+
         public Form1()
         {
             InitializeComponent();
 
             panel_game.Enabled = false;
-            ttt_field field = new ttt_field();
 
-            UpdateField(field.FieldGet());
+            UpdateField(field.GetField());
         }
-
         private void label_score_Click(object sender, EventArgs e)
         {
 
@@ -97,7 +99,124 @@ namespace tic_tac_toe
 
         private void button_restart_Click(object sender, EventArgs e)
         {
-            panel_game.Enabled = true;
+            if (isPlaying) //hmm, i think it's check for playing!
+            {
+                DialogResult result = MessageBox.Show(
+                        "Do you really would like to restart your game?", 
+                        "Restart?", 
+                        MessageBoxButtons.YesNo, 
+                        MessageBoxIcon.Question, 
+                        MessageBoxDefaultButton.Button2);
+
+                if (result == DialogResult.Yes)
+                {
+                    field.Flush();
+                    UpdateField(field.GetField());
+                }
+            }
+            else //not playing
+            {
+                panel_game.Enabled = true;
+                button_restart.Text = "Restart?";
+                isPlaying = true;
+            }
+            
         }
+
+
+
+        private void button_0_0_Click(object sender, EventArgs e)
+        {
+            if (isPlaying)
+            {
+                field.PlayerDraw(0, 0);
+                UpdateField(field.GetField());
+                isPlaying = !field.GetWinState();
+            }
+
+        }
+
+        private void button_1_0_Click(object sender, EventArgs e)
+        {
+            if (isPlaying)
+            {
+                field.PlayerDraw(1, 0);
+                UpdateField(field.GetField());
+                isPlaying = !field.GetWinState();
+            }
+        }
+
+        private void button_2_0_Click(object sender, EventArgs e)
+        {
+            if (isPlaying)
+            {
+                field.PlayerDraw(2, 0);
+                UpdateField(field.GetField());
+                isPlaying = !field.GetWinState();
+            }
+        }
+
+        private void button_0_1_Click(object sender, EventArgs e)
+        {
+            if (isPlaying)
+            {
+                field.PlayerDraw(0, 1);
+                UpdateField(field.GetField());
+                isPlaying = !field.GetWinState();
+            }
+        }
+
+        private void button_1_1_Click(object sender, EventArgs e)
+        {
+            if (isPlaying)
+            {
+                field.PlayerDraw(1, 1);
+                UpdateField(field.GetField());
+                isPlaying = !field.GetWinState();
+            }
+        }
+
+        private void button_2_1_Click(object sender, EventArgs e)
+        {
+            if (isPlaying)
+            {
+                field.PlayerDraw(2, 1);
+                UpdateField(field.GetField());
+                isPlaying = !field.GetWinState();
+            }
+        }
+
+        private void button_0_2_Click(object sender, EventArgs e)
+        {
+            if (isPlaying)
+            {
+                field.PlayerDraw(0, 2);
+                UpdateField(field.GetField());
+                isPlaying = !field.GetWinState();
+            }
+        }
+
+        private void button_1_2_Click(object sender, EventArgs e)
+        {
+            if (isPlaying)
+            {
+                field.PlayerDraw(1, 2);
+                UpdateField(field.GetField());
+                isPlaying = !field.GetWinState();
+            }
+        }
+
+        private void button_2_2_Click(object sender, EventArgs e)
+        {
+            if (isPlaying)
+            {
+                field.PlayerDraw(2, 2);
+                UpdateField(field.GetField());
+                isPlaying = !field.GetWinState();
+            }
+        }
+
+
+
     }
 }

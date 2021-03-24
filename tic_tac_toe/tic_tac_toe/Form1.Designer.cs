@@ -60,6 +60,7 @@ namespace tic_tac_toe
             resources.ApplyResources(this.button_0_0, "button_0_0");
             this.button_0_0.Name = "button_0_0";
             this.button_0_0.UseVisualStyleBackColor = true;
+            this.button_0_0.Click += new System.EventHandler(this.button_0_0_Click);
             // 
             // button_1_0
             // 
@@ -67,6 +68,7 @@ namespace tic_tac_toe
             resources.ApplyResources(this.button_1_0, "button_1_0");
             this.button_1_0.Name = "button_1_0";
             this.button_1_0.UseVisualStyleBackColor = true;
+            this.button_1_0.Click += new System.EventHandler(this.button_1_0_Click);
             // 
             // button_2_0
             // 
@@ -74,6 +76,7 @@ namespace tic_tac_toe
             resources.ApplyResources(this.button_2_0, "button_2_0");
             this.button_2_0.Name = "button_2_0";
             this.button_2_0.UseVisualStyleBackColor = true;
+            this.button_2_0.Click += new System.EventHandler(this.button_2_0_Click);
             // 
             // button_0_1
             // 
@@ -81,6 +84,7 @@ namespace tic_tac_toe
             resources.ApplyResources(this.button_0_1, "button_0_1");
             this.button_0_1.Name = "button_0_1";
             this.button_0_1.UseVisualStyleBackColor = true;
+            this.button_0_1.Click += new System.EventHandler(this.button_0_1_Click);
             // 
             // button_1_1
             // 
@@ -88,6 +92,7 @@ namespace tic_tac_toe
             resources.ApplyResources(this.button_1_1, "button_1_1");
             this.button_1_1.Name = "button_1_1";
             this.button_1_1.UseVisualStyleBackColor = true;
+            this.button_1_1.Click += new System.EventHandler(this.button_1_1_Click);
             // 
             // button_2_1
             // 
@@ -95,6 +100,7 @@ namespace tic_tac_toe
             resources.ApplyResources(this.button_2_1, "button_2_1");
             this.button_2_1.Name = "button_2_1";
             this.button_2_1.UseVisualStyleBackColor = true;
+            this.button_2_1.Click += new System.EventHandler(this.button_2_1_Click);
             // 
             // button_0_2
             // 
@@ -102,6 +108,7 @@ namespace tic_tac_toe
             resources.ApplyResources(this.button_0_2, "button_0_2");
             this.button_0_2.Name = "button_0_2";
             this.button_0_2.UseVisualStyleBackColor = true;
+            this.button_0_2.Click += new System.EventHandler(this.button_0_2_Click);
             // 
             // button_1_2
             // 
@@ -109,6 +116,7 @@ namespace tic_tac_toe
             resources.ApplyResources(this.button_1_2, "button_1_2");
             this.button_1_2.Name = "button_1_2";
             this.button_1_2.UseVisualStyleBackColor = true;
+            this.button_1_2.Click += new System.EventHandler(this.button_1_2_Click);
             // 
             // button_2_2
             // 
@@ -116,6 +124,7 @@ namespace tic_tac_toe
             resources.ApplyResources(this.button_2_2, "button_2_2");
             this.button_2_2.Name = "button_2_2";
             this.button_2_2.UseVisualStyleBackColor = true;
+            this.button_2_2.Click += new System.EventHandler(this.button_2_2_Click);
             // 
             // panel_game
             // 
