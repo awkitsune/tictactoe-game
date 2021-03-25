@@ -1,76 +1,91 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace tic_tac_toe
 {
     public partial class Form1 : Form
     {
         Move move = new Move();
-        ttt_field field = new ttt_field();
+        TicTacToeField field = new TicTacToeField();
+
+        string username = "";
 
         public void UpdateField(int[,] gameField) //make field clean
         {
-            switch (gameField[0, 0])
+            try
             {
-                case 0: button_0_0.Image = null; break;
-                case 1: button_0_0.Image = Image.FromFile($"cross_{field.GetIcon(0, 0)}.png"); break;
-                case 2: button_0_0.Image = Image.FromFile($"zero_{field.GetIcon(0, 0)}.png"); break;
+                switch (gameField[0, 0])
+                {
+                    case 0: button_0_0.Image = null; break;
+                    case 1: button_0_0.Image = Image.FromFile($"cross_{field.GetIcon(0, 0)}.png"); break;
+                    case 2: button_0_0.Image = Image.FromFile($"zero_{field.GetIcon(0, 0)}.png"); break;
+                }
+                switch (gameField[1, 0])
+                {
+                    case 0: button_1_0.Image = null; break;
+                    case 1: button_1_0.Image = Image.FromFile($"cross_{field.GetIcon(1, 0)}.png"); break;
+                    case 2: button_1_0.Image = Image.FromFile($"zero_{field.GetIcon(1, 0)}.png"); break;
+                }
+                switch (gameField[2, 0])
+                {
+                    case 0: button_2_0.Image = null; break;
+                    case 1: button_2_0.Image = Image.FromFile($"cross_{field.GetIcon(2, 0)}.png"); break;
+                    case 2: button_2_0.Image = Image.FromFile($"zero_{field.GetIcon(2, 0)}.png"); break;
+                }
+                switch (gameField[0, 1])
+                {
+                    case 0: button_0_1.Image = null; break;
+                    case 1: button_0_1.Image = Image.FromFile($"cross_{field.GetIcon(0, 1)}.png"); break;
+                    case 2: button_0_1.Image = Image.FromFile($"zero_{field.GetIcon(0, 1)}.png"); break;
+                }
+                switch (gameField[1, 1])
+                {
+                    case 0: button_1_1.Image = null; break;
+                    case 1: button_1_1.Image = Image.FromFile($"cross_{field.GetIcon(1, 1)}.png"); break;
+                    case 2: button_1_1.Image = Image.FromFile($"zero_{field.GetIcon(1, 1)}.png"); break;
+                }
+                switch (gameField[2, 1])
+                {
+                    case 0: button_2_1.Image = null; break;
+                    case 1: button_2_1.Image = Image.FromFile($"cross_{field.GetIcon(2, 1)}.png"); break;
+                    case 2: button_2_1.Image = Image.FromFile($"zero_{field.GetIcon(2, 1)}.png"); break;
+                }
+                switch (gameField[0, 2])
+                {
+                    case 0: button_0_2.Image = null; break;
+                    case 1: button_0_2.Image = Image.FromFile($"cross_{field.GetIcon(0, 2)}.png"); break;
+                    case 2: button_0_2.Image = Image.FromFile($"zero_{field.GetIcon(0, 2)}.png"); break;
+                }
+                switch (gameField[1, 2])
+                {
+                    case 0: button_1_2.Image = null; break;
+                    case 1: button_1_2.Image = Image.FromFile($"cross_{field.GetIcon(1, 2)}.png"); break;
+                    case 2: button_1_2.Image = Image.FromFile($"zero_{field.GetIcon(1, 2)}.png"); break;
+                }
+                switch (gameField[2, 2])
+                {
+                    case 0: button_2_2.Image = null; break;
+                    case 1: button_2_2.Image = Image.FromFile($"cross_{field.GetIcon(2, 2)}.png"); break;
+                    case 2: button_2_2.Image = Image.FromFile($"zero_{field.GetIcon(2, 2)}.png"); break;
+                }
             }
-            switch (gameField[1, 0])
+            catch (FileNotFoundException)
             {
-                case 0: button_1_0.Image = null; break;
-                case 1: button_1_0.Image = Image.FromFile($"cross_{field.GetIcon(1, 0)}.png"); break;
-                case 2: button_1_0.Image = Image.FromFile($"zero_{field.GetIcon(1, 0)}.png"); break;
+                DialogResult result = MessageBox.Show(
+                        "Buttons pictures are corrupted or not exist, check game folder!",
+                        "Oh, no!",
+                        MessageBoxButtons.OK,
+                        MessageBoxIcon.Warning,
+                        MessageBoxDefaultButton.Button1);
+
+                if (result == DialogResult.Yes)
+                {
+                    Application.Exit();
+                }
             }
-            switch (gameField[2, 0])
-            {
-                case 0: button_2_0.Image = null; break;
-                case 1: button_2_0.Image = Image.FromFile($"cross_{field.GetIcon(2, 0)}.png"); break;
-                case 2: button_2_0.Image = Image.FromFile($"zero_{field.GetIcon(2, 0)}.png"); break;
-            }
-            switch (gameField[0, 1])
-            {
-                case 0: button_0_1.Image = null; break;
-                case 1: button_0_1.Image = Image.FromFile($"cross_{field.GetIcon(0, 1)}.png"); break;
-                case 2: button_0_1.Image = Image.FromFile($"zero_{field.GetIcon(0, 1)}.png"); break;
-            }
-            switch (gameField[1, 1])
-            {
-                case 0: button_1_1.Image = null; break;
-                case 1: button_1_1.Image = Image.FromFile($"cross_{field.GetIcon(1, 1)}.png"); break;
-                case 2: button_1_1.Image = Image.FromFile($"zero_{field.GetIcon(1, 1)}.png"); break;
-            }
-            switch (gameField[2, 1])
-            {
-                case 0: button_2_1.Image = null; break;
-                case 1: button_2_1.Image = Image.FromFile($"cross_{field.GetIcon(2, 1)}.png"); break;
-                case 2: button_2_1.Image = Image.FromFile($"zero_{field.GetIcon(2, 1)}.png"); break;
-            }
-            switch (gameField[0, 2])
-            {
-                case 0: button_0_2.Image = null; break;
-                case 1: button_0_2.Image = Image.FromFile($"cross_{field.GetIcon(0, 2)}.png"); break;
-                case 2: button_0_2.Image = Image.FromFile($"zero_{field.GetIcon(0, 2)}.png"); break;
-            }
-            switch (gameField[1, 2])
-            {
-                case 0: button_1_2.Image = null; break;
-                case 1: button_1_2.Image = Image.FromFile($"cross_{field.GetIcon(1, 2)}.png"); break;
-                case 2: button_1_2.Image = Image.FromFile($"zero_{field.GetIcon(1, 2)}.png"); break;
-            }
-            switch (gameField[2, 2])
-            {
-                case 0: button_2_2.Image = null; break;
-                case 1: button_2_2.Image = Image.FromFile($"cross_{field.GetIcon(2, 2)}.png"); break;
-                case 2: button_2_2.Image = Image.FromFile($"zero_{field.GetIcon(2, 2)}.png"); break;
-            }
+
         }
 
         public Form1()
@@ -78,6 +93,7 @@ namespace tic_tac_toe
             InitializeComponent();
 
             panel_game.Enabled = false;
+            panel_userdata.Visible = false;
 
             UpdateField(field.GetField());
         }
@@ -88,7 +104,58 @@ namespace tic_tac_toe
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            
+            if (File.Exists("userdata.dat"))
+            {
+                try
+                {
+                    using (BinaryReader file = new BinaryReader(File.OpenRead("userdata.dat")))
+                    {
+                        username = file.ReadString();
+                        panel_userdata.Visible = true;
+                        panel_login.Visible = false;
+                        panel_game.Enabled = true;
+                    }
+                }
+                catch (IOException)
+                {
+                    DialogResult result = MessageBox.Show(
+                        "I cant read your username, would you like to delete it?",
+                        "Oh, no!",
+                        MessageBoxButtons.YesNo,
+                        MessageBoxIcon.Warning,
+                        MessageBoxDefaultButton.Button1);
+                    if (result == DialogResult.Yes)
+                    {
+                        File.Delete("userdata.dat");
+                    }
+                    else
+                    {
+                        Application.Exit();
+                    }
+                }
+            }
+        }
+        private void button_login_Click(object sender, EventArgs e)
+        {
+            if (textBox_username.Text.Length > 0)
+            {
+                username = textBox_username.Text;
+                panel_userdata.Visible = true;
+                panel_login.Visible = false;
+                panel_game.Enabled = true;
+                try
+                {
+                    using (BinaryWriter file = new BinaryWriter(File.OpenWrite("userdata.dat")))
+                    {
+                        file.Write(username);
+                    }
+                }
+                catch (IOException)
+                {
+                    
+                }
+            }
+
         }
 
         private void timer1_Tick(object sender, EventArgs e)

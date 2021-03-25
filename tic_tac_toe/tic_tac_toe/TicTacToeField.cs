@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace tic_tac_toe
 {
@@ -15,7 +11,7 @@ namespace tic_tac_toe
             if (Pressed != null) Pressed(x, y);
         }
     }
-    class ttt_field
+    class TicTacToeField
     {
         Random rnd_icon = new Random();
         Random rnd_cell = new Random();
@@ -398,7 +394,7 @@ namespace tic_tac_toe
             return false;
         }
         
-        public ttt_field()
+        public TicTacToeField()
         {
             for (int i = 0; i < 3; i++)
             {

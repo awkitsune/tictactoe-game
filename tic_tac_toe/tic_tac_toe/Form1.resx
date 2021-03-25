@@ -117,23 +117,131 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="button_0_0.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="button_0_0.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 8.25pt</value>
+  <data name="label_username.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 15.75pt</value>
   </data>
-  <data name="button_0_0.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 3</value>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="label_username.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
-  <data name="button_0_0.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 75</value>
+  <data name="label_username.Location" type="System.Drawing.Point, System.Drawing">
+    <value>-5, 0</value>
+  </data>
+  <data name="label_username.Size" type="System.Drawing.Size, System.Drawing">
+    <value>246, 30</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="button_0_0.TabIndex" type="System.Int32, mscorlib">
+  <data name="label_username.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="label_username.Text" xml:space="preserve">
+    <value>username</value>
+  </data>
+  <data name="&gt;&gt;label_username.Name" xml:space="preserve">
+    <value>label_username</value>
+  </data>
+  <data name="&gt;&gt;label_username.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_username.Parent" xml:space="preserve">
+    <value>panel_userdata</value>
+  </data>
+  <data name="&gt;&gt;label_username.ZOrder" xml:space="preserve">
     <value>0</value>
+  </data>
+  <data name="label_vs_who.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 11.25pt</value>
+  </data>
+  <data name="label_vs_who.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label_vs_who.Location" type="System.Drawing.Point, System.Drawing">
+    <value>-4, 30</value>
+  </data>
+  <data name="label_vs_who.Size" type="System.Drawing.Size, System.Drawing">
+    <value>245, 23</value>
+  </data>
+  <data name="label_vs_who.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="label_vs_who.Text" xml:space="preserve">
+    <value>vs Computer</value>
+  </data>
+  <data name="&gt;&gt;label_vs_who.Name" xml:space="preserve">
+    <value>label_vs_who</value>
+  </data>
+  <data name="&gt;&gt;label_vs_who.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_vs_who.Parent" xml:space="preserve">
+    <value>panel_userdata</value>
+  </data>
+  <data name="&gt;&gt;label_vs_who.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="button_restart.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="button_restart.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 375</value>
+  </data>
+  <data name="button_restart.Size" type="System.Drawing.Size, System.Drawing">
+    <value>115, 23</value>
+  </data>
+  <data name="button_restart.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="button_restart.Text" xml:space="preserve">
+    <value>Start?</value>
+  </data>
+  <data name="&gt;&gt;button_restart.Name" xml:space="preserve">
+    <value>button_restart</value>
+  </data>
+  <data name="&gt;&gt;button_restart.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button_restart.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;button_restart.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="button_about.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="button_about.Location" type="System.Drawing.Point, System.Drawing">
+    <value>142, 375</value>
+  </data>
+  <data name="button_about.Size" type="System.Drawing.Size, System.Drawing">
+    <value>115, 23</value>
+  </data>
+  <data name="button_about.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="button_about.Text" xml:space="preserve">
+    <value>About</value>
+  </data>
+  <data name="&gt;&gt;button_about.Name" xml:space="preserve">
+    <value>button_about</value>
+  </data>
+  <data name="&gt;&gt;button_about.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button_about.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;button_about.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="panel_game.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="panel_game.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
+    <value>GrowAndShrink</value>
+  </data>
+  <data name="panel_game.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Center</value>
   </data>
   <data name="&gt;&gt;button_0_0.Name" xml:space="preserve">
     <value>button_0_0</value>
@@ -147,22 +255,16 @@
   <data name="&gt;&gt;button_0_0.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="button_1_0.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
+  <data name="&gt;&gt;button_2_2.Name" xml:space="preserve">
+    <value>button_2_2</value>
   </data>
-  <data name="button_1_0.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 8.25pt</value>
+  <data name="&gt;&gt;button_2_2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="button_1_0.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="&gt;&gt;button_2_2.Parent" xml:space="preserve">
+    <value>panel_game</value>
   </data>
-  <data name="button_1_0.Location" type="System.Drawing.Point, System.Drawing">
-    <value>84, 3</value>
-  </data>
-  <data name="button_1_0.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 75</value>
-  </data>
-  <data name="button_1_0.TabIndex" type="System.Int32, mscorlib">
+  <data name="&gt;&gt;button_2_2.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
   <data name="&gt;&gt;button_1_0.Name" xml:space="preserve">
@@ -177,23 +279,17 @@
   <data name="&gt;&gt;button_1_0.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="button_2_0.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
+  <data name="&gt;&gt;button_1_2.Name" xml:space="preserve">
+    <value>button_1_2</value>
   </data>
-  <data name="button_2_0.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 8.25pt</value>
+  <data name="&gt;&gt;button_1_2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="button_2_0.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="&gt;&gt;button_1_2.Parent" xml:space="preserve">
+    <value>panel_game</value>
   </data>
-  <data name="button_2_0.Location" type="System.Drawing.Point, System.Drawing">
-    <value>165, 3</value>
-  </data>
-  <data name="button_2_0.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 75</value>
-  </data>
-  <data name="button_2_0.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
+  <data name="&gt;&gt;button_1_2.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
   <data name="&gt;&gt;button_2_0.Name" xml:space="preserve">
     <value>button_2_0</value>
@@ -207,23 +303,17 @@
   <data name="&gt;&gt;button_2_0.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <data name="button_0_1.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
+  <data name="&gt;&gt;button_0_2.Name" xml:space="preserve">
+    <value>button_0_2</value>
   </data>
-  <data name="button_0_1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 8.25pt</value>
+  <data name="&gt;&gt;button_0_2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="button_0_1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="&gt;&gt;button_0_2.Parent" xml:space="preserve">
+    <value>panel_game</value>
   </data>
-  <data name="button_0_1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 84</value>
-  </data>
-  <data name="button_0_1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 75</value>
-  </data>
-  <data name="button_0_1.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
+  <data name="&gt;&gt;button_0_2.ZOrder" xml:space="preserve">
+    <value>5</value>
   </data>
   <data name="&gt;&gt;button_0_1.Name" xml:space="preserve">
     <value>button_0_1</value>
@@ -237,23 +327,17 @@
   <data name="&gt;&gt;button_0_1.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
-  <data name="button_1_1.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
+  <data name="&gt;&gt;button_2_1.Name" xml:space="preserve">
+    <value>button_2_1</value>
   </data>
-  <data name="button_1_1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 8.25pt</value>
+  <data name="&gt;&gt;button_2_1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="button_1_1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="&gt;&gt;button_2_1.Parent" xml:space="preserve">
+    <value>panel_game</value>
   </data>
-  <data name="button_1_1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>84, 84</value>
-  </data>
-  <data name="button_1_1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 75</value>
-  </data>
-  <data name="button_1_1.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
+  <data name="&gt;&gt;button_2_1.ZOrder" xml:space="preserve">
+    <value>7</value>
   </data>
   <data name="&gt;&gt;button_1_1.Name" xml:space="preserve">
     <value>button_1_1</value>
@@ -267,95 +351,56 @@
   <data name="&gt;&gt;button_1_1.ZOrder" xml:space="preserve">
     <value>8</value>
   </data>
-  <data name="button_2_1.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
+  <data name="panel_game.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 124</value>
   </data>
-  <data name="button_2_1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 8.25pt</value>
+  <data name="panel_game.Size" type="System.Drawing.Size, System.Drawing">
+    <value>245, 245</value>
   </data>
-  <data name="button_2_1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="panel_game.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
   </data>
-  <data name="button_2_1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>165, 84</value>
-  </data>
-  <data name="button_2_1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 75</value>
-  </data>
-  <data name="button_2_1.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;button_2_1.Name" xml:space="preserve">
-    <value>button_2_1</value>
-  </data>
-  <data name="&gt;&gt;button_2_1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button_2_1.Parent" xml:space="preserve">
+  <data name="&gt;&gt;panel_game.Name" xml:space="preserve">
     <value>panel_game</value>
   </data>
-  <data name="&gt;&gt;button_2_1.ZOrder" xml:space="preserve">
-    <value>7</value>
+  <data name="&gt;&gt;panel_game.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="button_0_2.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+  <data name="&gt;&gt;panel_game.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panel_game.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="button_0_0.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
-  <data name="button_0_2.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="button_0_0.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 8.25pt</value>
   </data>
-  <data name="button_0_2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="button_0_0.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="button_0_2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 165</value>
+  <data name="button_0_0.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
   </data>
-  <data name="button_0_2.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="button_0_0.Size" type="System.Drawing.Size, System.Drawing">
     <value>75, 75</value>
   </data>
-  <data name="button_0_2.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
+  <data name="button_0_0.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
   </data>
-  <data name="&gt;&gt;button_0_2.Name" xml:space="preserve">
-    <value>button_0_2</value>
+  <data name="&gt;&gt;button_0_0.Name" xml:space="preserve">
+    <value>button_0_0</value>
   </data>
-  <data name="&gt;&gt;button_0_2.Type" xml:space="preserve">
+  <data name="&gt;&gt;button_0_0.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;button_0_2.Parent" xml:space="preserve">
+  <data name="&gt;&gt;button_0_0.Parent" xml:space="preserve">
     <value>panel_game</value>
   </data>
-  <data name="&gt;&gt;button_0_2.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="button_1_2.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="button_1_2.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 8.25pt</value>
-  </data>
-  <data name="button_1_2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="button_1_2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>84, 165</value>
-  </data>
-  <data name="button_1_2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 75</value>
-  </data>
-  <data name="button_1_2.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;button_1_2.Name" xml:space="preserve">
-    <value>button_1_2</value>
-  </data>
-  <data name="&gt;&gt;button_1_2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button_1_2.Parent" xml:space="preserve">
-    <value>panel_game</value>
-  </data>
-  <data name="&gt;&gt;button_1_2.ZOrder" xml:space="preserve">
-    <value>3</value>
+  <data name="&gt;&gt;button_0_0.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="button_2_2.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -387,146 +432,377 @@
   <data name="&gt;&gt;button_2_2.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="panel_game.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="button_1_0.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
   </data>
-  <data name="panel_game.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
-    <value>GrowAndShrink</value>
+  <data name="button_1_0.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 8.25pt</value>
   </data>
-  <data name="panel_game.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Center</value>
+  <data name="button_1_0.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
-  <data name="panel_game.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 77</value>
+  <data name="button_1_0.Location" type="System.Drawing.Point, System.Drawing">
+    <value>84, 3</value>
   </data>
-  <data name="panel_game.Size" type="System.Drawing.Size, System.Drawing">
-    <value>245, 245</value>
+  <data name="button_1_0.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 75</value>
   </data>
-  <data name="panel_game.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
+  <data name="button_1_0.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
   </data>
-  <data name="&gt;&gt;panel_game.Name" xml:space="preserve">
+  <data name="&gt;&gt;button_1_0.Name" xml:space="preserve">
+    <value>button_1_0</value>
+  </data>
+  <data name="&gt;&gt;button_1_0.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button_1_0.Parent" xml:space="preserve">
     <value>panel_game</value>
   </data>
-  <data name="&gt;&gt;panel_game.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panel_game.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;panel_game.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="label_username.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 15.75pt</value>
-  </data>
-  <data name="label_username.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label_username.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 21</value>
-  </data>
-  <data name="label_username.Size" type="System.Drawing.Size, System.Drawing">
-    <value>250, 30</value>
-  </data>
-  <data name="label_username.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
-  </data>
-  <data name="label_username.Text" xml:space="preserve">
-    <value>username</value>
-  </data>
-  <data name="&gt;&gt;label_username.Name" xml:space="preserve">
-    <value>label_username</value>
-  </data>
-  <data name="&gt;&gt;label_username.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label_username.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;label_username.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;button_1_0.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="label_vs_who.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 11.25pt</value>
+  <data name="button_1_2.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
   </data>
-  <data name="label_vs_who.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="button_1_2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 8.25pt</value>
+  </data>
+  <data name="button_1_2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="label_vs_who.Location" type="System.Drawing.Point, System.Drawing">
-    <value>8, 51</value>
+  <data name="button_1_2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>84, 165</value>
   </data>
-  <data name="label_vs_who.Size" type="System.Drawing.Size, System.Drawing">
-    <value>249, 23</value>
+  <data name="button_1_2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 75</value>
   </data>
-  <data name="label_vs_who.TabIndex" type="System.Int32, mscorlib">
-    <value>11</value>
+  <data name="button_1_2.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
   </data>
-  <data name="label_vs_who.Text" xml:space="preserve">
-    <value>vs Computer</value>
+  <data name="&gt;&gt;button_1_2.Name" xml:space="preserve">
+    <value>button_1_2</value>
   </data>
-  <data name="&gt;&gt;label_vs_who.Name" xml:space="preserve">
-    <value>label_vs_who</value>
-  </data>
-  <data name="&gt;&gt;label_vs_who.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label_vs_who.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;label_vs_who.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="button_restart.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 328</value>
-  </data>
-  <data name="button_restart.Size" type="System.Drawing.Size, System.Drawing">
-    <value>115, 23</value>
-  </data>
-  <data name="button_restart.TabIndex" type="System.Int32, mscorlib">
-    <value>15</value>
-  </data>
-  <data name="button_restart.Text" xml:space="preserve">
-    <value>Start?</value>
-  </data>
-  <data name="&gt;&gt;button_restart.Name" xml:space="preserve">
-    <value>button_restart</value>
-  </data>
-  <data name="&gt;&gt;button_restart.Type" xml:space="preserve">
+  <data name="&gt;&gt;button_1_2.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;button_restart.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="&gt;&gt;button_1_2.Parent" xml:space="preserve">
+    <value>panel_game</value>
   </data>
-  <data name="&gt;&gt;button_restart.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;button_1_2.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="button_about.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="button_2_0.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="button_2_0.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 8.25pt</value>
+  </data>
+  <data name="button_2_0.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="button_about.Location" type="System.Drawing.Point, System.Drawing">
-    <value>142, 328</value>
+  <data name="button_2_0.Location" type="System.Drawing.Point, System.Drawing">
+    <value>165, 3</value>
   </data>
-  <data name="button_about.Size" type="System.Drawing.Size, System.Drawing">
-    <value>115, 23</value>
+  <data name="button_2_0.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 75</value>
   </data>
-  <data name="button_about.TabIndex" type="System.Int32, mscorlib">
-    <value>16</value>
+  <data name="button_2_0.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
   </data>
-  <data name="button_about.Text" xml:space="preserve">
-    <value>About</value>
+  <data name="&gt;&gt;button_2_0.Name" xml:space="preserve">
+    <value>button_2_0</value>
   </data>
-  <data name="&gt;&gt;button_about.Name" xml:space="preserve">
-    <value>button_about</value>
-  </data>
-  <data name="&gt;&gt;button_about.Type" xml:space="preserve">
+  <data name="&gt;&gt;button_2_0.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;button_about.Parent" xml:space="preserve">
+  <data name="&gt;&gt;button_2_0.Parent" xml:space="preserve">
+    <value>panel_game</value>
+  </data>
+  <data name="&gt;&gt;button_2_0.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="button_0_2.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="button_0_2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 8.25pt</value>
+  </data>
+  <data name="button_0_2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="button_0_2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 165</value>
+  </data>
+  <data name="button_0_2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 75</value>
+  </data>
+  <data name="button_0_2.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;button_0_2.Name" xml:space="preserve">
+    <value>button_0_2</value>
+  </data>
+  <data name="&gt;&gt;button_0_2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button_0_2.Parent" xml:space="preserve">
+    <value>panel_game</value>
+  </data>
+  <data name="&gt;&gt;button_0_2.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="button_0_1.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="button_0_1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 8.25pt</value>
+  </data>
+  <data name="button_0_1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="button_0_1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 84</value>
+  </data>
+  <data name="button_0_1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 75</value>
+  </data>
+  <data name="button_0_1.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;button_0_1.Name" xml:space="preserve">
+    <value>button_0_1</value>
+  </data>
+  <data name="&gt;&gt;button_0_1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button_0_1.Parent" xml:space="preserve">
+    <value>panel_game</value>
+  </data>
+  <data name="&gt;&gt;button_0_1.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="button_2_1.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="button_2_1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 8.25pt</value>
+  </data>
+  <data name="button_2_1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="button_2_1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>165, 84</value>
+  </data>
+  <data name="button_2_1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 75</value>
+  </data>
+  <data name="button_2_1.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;button_2_1.Name" xml:space="preserve">
+    <value>button_2_1</value>
+  </data>
+  <data name="&gt;&gt;button_2_1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button_2_1.Parent" xml:space="preserve">
+    <value>panel_game</value>
+  </data>
+  <data name="&gt;&gt;button_2_1.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="button_1_1.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="button_1_1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 8.25pt</value>
+  </data>
+  <data name="button_1_1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="button_1_1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>84, 84</value>
+  </data>
+  <data name="button_1_1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 75</value>
+  </data>
+  <data name="button_1_1.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;button_1_1.Name" xml:space="preserve">
+    <value>button_1_1</value>
+  </data>
+  <data name="&gt;&gt;button_1_1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button_1_1.Parent" xml:space="preserve">
+    <value>panel_game</value>
+  </data>
+  <data name="&gt;&gt;button_1_1.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="panel_login.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="panel_login.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
+    <value>GrowAndShrink</value>
+  </data>
+  <data name="&gt;&gt;button_login.Name" xml:space="preserve">
+    <value>button_login</value>
+  </data>
+  <data name="&gt;&gt;button_login.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button_login.Parent" xml:space="preserve">
+    <value>panel_login</value>
+  </data>
+  <data name="&gt;&gt;button_login.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;textBox_username.Name" xml:space="preserve">
+    <value>textBox_username</value>
+  </data>
+  <data name="&gt;&gt;textBox_username.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBox_username.Parent" xml:space="preserve">
+    <value>panel_login</value>
+  </data>
+  <data name="&gt;&gt;textBox_username.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>panel_login</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="panel_login.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 13</value>
+  </data>
+  <data name="panel_login.Size" type="System.Drawing.Size, System.Drawing">
+    <value>244, 46</value>
+  </data>
+  <data name="panel_login.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;panel_login.Name" xml:space="preserve">
+    <value>panel_login</value>
+  </data>
+  <data name="&gt;&gt;panel_login.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel_login.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;button_about.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;panel_login.ZOrder" xml:space="preserve">
     <value>1</value>
+  </data>
+  <data name="button_login.Location" type="System.Drawing.Point, System.Drawing">
+    <value>166, 21</value>
+  </data>
+  <data name="button_login.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 22</value>
+  </data>
+  <data name="button_login.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="button_login.Text" xml:space="preserve">
+    <value>Login</value>
+  </data>
+  <data name="&gt;&gt;button_login.Name" xml:space="preserve">
+    <value>button_login</value>
+  </data>
+  <data name="&gt;&gt;button_login.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button_login.Parent" xml:space="preserve">
+    <value>panel_login</value>
+  </data>
+  <data name="&gt;&gt;button_login.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="textBox_username.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 21</value>
+  </data>
+  <data name="textBox_username.Size" type="System.Drawing.Size, System.Drawing">
+    <value>153, 22</value>
+  </data>
+  <data name="textBox_username.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;textBox_username.Name" xml:space="preserve">
+    <value>textBox_username</value>
+  </data>
+  <data name="&gt;&gt;textBox_username.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBox_username.Parent" xml:space="preserve">
+    <value>panel_login</value>
+  </data>
+  <data name="&gt;&gt;textBox_username.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 4</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>57, 13</value>
+  </data>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Nickname</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>panel_login</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="panel_userdata.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="panel_userdata.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
+    <value>GrowAndShrink</value>
+  </data>
+  <data name="panel_userdata.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 65</value>
+  </data>
+  <data name="panel_userdata.Size" type="System.Drawing.Size, System.Drawing">
+    <value>244, 53</value>
+  </data>
+  <data name="panel_userdata.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="&gt;&gt;panel_userdata.Name" xml:space="preserve">
+    <value>panel_userdata</value>
+  </data>
+  <data name="&gt;&gt;panel_userdata.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel_userdata.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panel_userdata.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -535,7 +811,7 @@
     <value>6, 13</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>269, 356</value>
+    <value>269, 408</value>
   </data>
   <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 8.25pt</value>
@@ -615,9 +891,6 @@
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
 </value>
-  </data>
-  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
   </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>
