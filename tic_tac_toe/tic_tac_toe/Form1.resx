@@ -393,8 +393,11 @@
   <data name="panel_game.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
     <value>GrowAndShrink</value>
   </data>
+  <data name="panel_game.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Center</value>
+  </data>
   <data name="panel_game.Location" type="System.Drawing.Point, System.Drawing">
-    <value>129, 106</value>
+    <value>12, 77</value>
   </data>
   <data name="panel_game.Size" type="System.Drawing.Size, System.Drawing">
     <value>245, 245</value>
@@ -412,7 +415,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_game.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>4</value>
   </data>
   <data name="label_username.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 15.75pt</value>
@@ -421,10 +424,10 @@
     <value>NoControl</value>
   </data>
   <data name="label_username.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
+    <value>7, 21</value>
   </data>
   <data name="label_username.Size" type="System.Drawing.Size, System.Drawing">
-    <value>276, 30</value>
+    <value>250, 30</value>
   </data>
   <data name="label_username.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
@@ -439,103 +442,46 @@
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;label_username.Parent" xml:space="preserve">
-    <value>panel_userinfo</value>
+    <value>$this</value>
   </data>
   <data name="&gt;&gt;label_username.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="label_curr_combo.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 14.25pt</value>
+  <data name="label_vs_who.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 11.25pt</value>
   </data>
-  <data name="label_curr_combo.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="label_vs_who.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="label_curr_combo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 30</value>
+  <data name="label_vs_who.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 51</value>
   </data>
-  <data name="label_curr_combo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>276, 25</value>
+  <data name="label_vs_who.Size" type="System.Drawing.Size, System.Drawing">
+    <value>249, 23</value>
   </data>
-  <data name="label_curr_combo.TabIndex" type="System.Int32, mscorlib">
+  <data name="label_vs_who.TabIndex" type="System.Int32, mscorlib">
     <value>11</value>
   </data>
-  <data name="label_curr_combo.Text" xml:space="preserve">
-    <value>current combo: 123456789</value>
+  <data name="label_vs_who.Text" xml:space="preserve">
+    <value>vs Computer</value>
   </data>
-  <data name="&gt;&gt;label_curr_combo.Name" xml:space="preserve">
-    <value>label_curr_combo</value>
+  <data name="&gt;&gt;label_vs_who.Name" xml:space="preserve">
+    <value>label_vs_who</value>
   </data>
-  <data name="&gt;&gt;label_curr_combo.Type" xml:space="preserve">
+  <data name="&gt;&gt;label_vs_who.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;label_curr_combo.Parent" xml:space="preserve">
-    <value>panel_userinfo</value>
-  </data>
-  <data name="&gt;&gt;label_curr_combo.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="listBox1.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="listBox1.Items" xml:space="preserve">
-    <value>under construction</value>
-  </data>
-  <data name="listBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 127</value>
-  </data>
-  <data name="listBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>111, 186</value>
-  </data>
-  <data name="listBox1.TabIndex" type="System.Int32, mscorlib">
-    <value>12</value>
-  </data>
-  <data name="&gt;&gt;listBox1.Name" xml:space="preserve">
-    <value>listBox1</value>
-  </data>
-  <data name="&gt;&gt;listBox1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;listBox1.Parent" xml:space="preserve">
+  <data name="&gt;&gt;label_vs_who.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;listBox1.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="label_rec.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 9.75pt</value>
-  </data>
-  <data name="label_rec.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label_rec.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 106</value>
-  </data>
-  <data name="label_rec.Size" type="System.Drawing.Size, System.Drawing">
-    <value>114, 18</value>
-  </data>
-  <data name="label_rec.TabIndex" type="System.Int32, mscorlib">
-    <value>13</value>
-  </data>
-  <data name="label_rec.Text" xml:space="preserve">
-    <value>hi-scores table</value>
-  </data>
-  <data name="&gt;&gt;label_rec.Name" xml:space="preserve">
-    <value>label_rec</value>
-  </data>
-  <data name="&gt;&gt;label_rec.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label_rec.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;label_rec.ZOrder" xml:space="preserve">
-    <value>4</value>
+  <data name="&gt;&gt;label_vs_who.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="button_restart.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 326</value>
+    <value>12, 328</value>
   </data>
   <data name="button_restart.Size" type="System.Drawing.Size, System.Drawing">
-    <value>111, 23</value>
+    <value>115, 23</value>
   </data>
   <data name="button_restart.TabIndex" type="System.Int32, mscorlib">
     <value>15</value>
@@ -555,113 +501,17 @@
   <data name="&gt;&gt;button_restart.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="label_max_combo.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 12pt</value>
-  </data>
-  <data name="label_max_combo.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="button_about.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="label_max_combo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 55</value>
-  </data>
-  <data name="label_max_combo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>276, 25</value>
-  </data>
-  <data name="label_max_combo.TabIndex" type="System.Int32, mscorlib">
-    <value>12</value>
-  </data>
-  <data name="label_max_combo.Text" xml:space="preserve">
-    <value>max combo: 123456789</value>
-  </data>
-  <data name="&gt;&gt;label_max_combo.Name" xml:space="preserve">
-    <value>label_max_combo</value>
-  </data>
-  <data name="&gt;&gt;label_max_combo.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label_max_combo.Parent" xml:space="preserve">
-    <value>panel_userinfo</value>
-  </data>
-  <data name="&gt;&gt;label_max_combo.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="panel_userinfo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 12</value>
-  </data>
-  <data name="panel_userinfo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>279, 88</value>
-  </data>
-  <data name="panel_userinfo.TabIndex" type="System.Int32, mscorlib">
-    <value>11</value>
-  </data>
-  <data name="&gt;&gt;panel_userinfo.Name" xml:space="preserve">
-    <value>panel_userinfo</value>
-  </data>
-  <data name="&gt;&gt;panel_userinfo.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panel_userinfo.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;panel_userinfo.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="button_login.Location" type="System.Drawing.Point, System.Drawing">
-    <value>297, 48</value>
-  </data>
-  <data name="button_login.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 23</value>
-  </data>
-  <data name="button_login.TabIndex" type="System.Int32, mscorlib">
-    <value>17</value>
-  </data>
-  <data name="button_login.Text" xml:space="preserve">
-    <value>login</value>
-  </data>
-  <data name="&gt;&gt;button_login.Name" xml:space="preserve">
-    <value>button_login</value>
-  </data>
-  <data name="&gt;&gt;button_login.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button_login.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;button_login.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="button_logout.Location" type="System.Drawing.Point, System.Drawing">
-    <value>297, 77</value>
-  </data>
-  <data name="button_logout.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 23</value>
-  </data>
-  <data name="button_logout.TabIndex" type="System.Int32, mscorlib">
-    <value>18</value>
-  </data>
-  <data name="button_logout.Text" xml:space="preserve">
-    <value>logout</value>
-  </data>
-  <data name="&gt;&gt;button_logout.Name" xml:space="preserve">
-    <value>button_logout</value>
-  </data>
-  <data name="&gt;&gt;button_logout.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button_logout.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;button_logout.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
   <data name="button_about.Location" type="System.Drawing.Point, System.Drawing">
-    <value>298, 13</value>
+    <value>142, 328</value>
   </data>
   <data name="button_about.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 29</value>
+    <value>115, 23</value>
   </data>
   <data name="button_about.TabIndex" type="System.Int32, mscorlib">
-    <value>19</value>
+    <value>16</value>
   </data>
   <data name="button_about.Text" xml:space="preserve">
     <value>About</value>
@@ -676,7 +526,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button_about.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -685,10 +535,89 @@
     <value>6, 13</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>384, 361</value>
+    <value>269, 356</value>
   </data>
   <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 8.25pt</value>
+  </data>
+  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAABAAEAICAAAAEAIACoEAAAFgAAACgAAAAgAAAAQAAAAAEAIAAAAAAAABAAACMuAAAjLgAAAAAAAAAA
+        AAD//////////////////////////////////////f39/1lZWf9ZWVn//f39////////////////////
+        ///////////////////////////////////+/v7/////////////////////////////////////////
+        ///////////////////s7Oz/tLS0/7Gxsf/m5ub////////////t7e3/LS0t/15eXv//////////////
+        ////////////////////////////////////////6urq/4CAgP/l5eX///////X19f/u7u7/////////
+        ////////////////////////5OTk/05OTv8ODg7/DAwM/zg4OP/T09P//////9TU1P8TExP/g4OD////
+        ///////////////////////////////////////////////////R0dH/IiIi/8rKyv//////np6e/15e
+        Xv/29vb///////////////////////////+FhYX/GRkZ/6qqqv+tra3/HR0d/2hoaP//////ubm5/wgI
+        CP+goKD/////////////////9vb2/6enp/9lZWX/cnJy/8DAwP/8/Pz//////8rKyv8bGxv/xcXF////
+        //+tra3/FBQU/7i4uP///////////////////////////1VVVf9GRkb/+Pj4//////9cXFz/OTk5//n5
+        +f+goKD/BwcH/7a2tv////////////////+Li4v/CgoK/yIiIv8YGBj/FBQU/6urq///////wsLC/xUV
+        Ff/AwMD//////+rq6v81NTX/R0dH/+7u7v+8vLz/enp6/+np6f//////cXFx/zs7O//y8vL/8fHx/z4+
+        Pv9JSUn//f39/4qKiv8KCgr/xsbG////////////7e3t/y8vL/9OTk7/5eXl/9DQ0P8tLS3/QEBA//j4
+        +P+7u7v/Dw8P/7y8vP///////////6ampv8SEhL/U1NT/xYWFv86Ojr/6urq///////Ly8v/MjIy/35+
+        fv9aWlr/CgoK/5qamv//////eHh4/w4ODv/Q0ND////////////p6en/Jycn/39/f///////+/v7/1FR
+        Uf8qKir/8fHx/7Kysv8LCwv/t7e3////////////4+Pj/zAwMP8AAAD/QEBA/9bW1v//////////////
+        ///Pz8//aWlp/yYmJv+CgoL/9PT0//////9tbW3/EhIS/9fX1/////////////z8/P9hYWH/Kysr/5aW
+        lv+Hh4f/EhIS/2BgYP//////p6en/wcHB/+0tLT//////8vLy/9HR0f/Ghoa/xUVFf9DQ0P/7Ozs////
+        ///////////////////29vb/6enp//z8/P///////////2VlZf8WFhb/29vb/////////////////93d
+        3f9YWFj/CgoK/wUFBf9GRkb/2dnZ//////+dnZ3/BAQE/7Ozs//c3Nz/MDAw/0hISP/FxcX/pKSk/w0N
+        Df9paWn/8vLy////////////////////////////////////////////YmJi/xcXF//d3d3/////////
+        //////////////X19f+8vLz/tra2/+3t7f///////////5OTk/8CAgL/r6+v//T09P/Dw8P/8fHx////
+        ///5+fn/bm5u/xYWFv/IyMj//////9XV1f+jo6P/uLi4/8vLy//b29v/5+fn//Dw8P9dXV3/GBgY/93d
+        3f//////////////////////////////////////////////////////iIiI/wAAAP+srKz/////////
+        ///////////////////w8PD/y8vL//X19f//////y8vL/2RkZP85OTn/IiIi/xwcHP8iIiL/Ly8v/xUV
+        Ff8JCQn/UVFR/2pqav92dnb/goKC/46Ojv+ZmZn/o6Oj/62trf+2trb/vr6+/8jIyP9lZWX/AAAA/5OT
+        k//l5eX/5+fn/+3t7f/y8vL/9vb2//v7+////////////////////////f39/+3t7f/Nzc3/pKSk/3h4
+        eP9PT0//GBgY/wAAAP8EBAT/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AQEB/wQEBP8HBwf/CwsL/wcH
+        B/8AAAD/EhIS/x8fH/8mJib/Li4u/zY2Nv9AQED/S0tL/1hYWP9nZ2f/sLCw////////////////////
+        //////////////39/f9qamr/EBAQ/6Kiov+mpqb/iIiI/25ubv9XV1f/RERE/zQ0NP8oKCj/Hh4e/xcX
+        F/8SEhL/BgYG/wAAAP8GBgb/CQkJ/wkJCf8JCQn/CgoK/w0NDf8RERH/FhYW/x8fH/9+fn7/////////
+        /////////////////////////////3V1df8TExP/19fX///////////////////////5+fn/8PDw/+np
+        6f/k5OT/2tra/9HR0f9OTk7/AAAA/4ODg//Gxsb/w8PD/8XFxf/Jycn/zs7O/9TU1P/c3Nz/5eXl//f3
+        9///////////////////////////////////////fX19/xEREf/V1dX////////////+/v7/xsbG/9bW
+        1v//////7Ozs/7Kysv/m5ub//////1lZWf8AAAD/rKys////////////////////////////////////
+        //////////////////////////////////////////////////+EhIT/EBAQ/9LS0v////////////7+
+        /v9iYmL/NDQ0/8TExP9UVFT/EhIS/76+vv//////UVFR/wAAAP+tra3/////////////////////////
+        /////////////////////////////////////////////////////////////4yMjP8QEBD/0dHR////
+        /////////////8fHx/8gICD/FRUV/x0dHf+hoaH/+/v7//r6+v9KSkr/AAAA/7CwsP//////////////
+        ////////////////////////////////////////////////////////////////////////kpKS/xER
+        Ef/R0dH/////////////////7Ozs/0RERP8AAAD/RERE/+3t7f//////+Pj4/0RERP8BAQH/srKy////
+        ////////////////////////////////////////////////////////////////////////////////
+        //+Xl5f/EBAQ/8/Pz////////////+3t7f9bW1v/KSkp/15eXv8KCgr/aGho//X19f/29vb/Pz8//wIC
+        Av+2trb/////////////////////////////////////////////////////////////////////////
+        /////////////5qamv8NDQ3/yMjI////////////1dXV/2hoaP/MzMz/9PT0/29vb/8mJib/1tbW//b2
+        9v87Ozv/BAQE/7q6uv///////////////////////////////////////////////////////f39//7+
+        /v//////////////////////m5ub/wgICP+9vb3//////////////////v7+////////////9fX1/9ra
+        2v/7+/v/8/Pz/zg4OP8GBgb/v7+///////////////////////////////////////////////////v7
+        +/+Li4v/dXV1/5iYmP+oqKj/srKy/7u7u/9wcHD/AwMD/4yMjP/Ozs7/zs7O/9HR0f/U1NT/2dnZ/9/f
+        3//o6Oj/8/Pz//r6+v/w8PD/NjY2/wgICP/FxcX////////////////////////////5+fn/+vr6////
+        /////////////8DAwP9eXl7/Li4u/xwcHP8TExP/Dg4O/wcHB/8AAAD/CQkJ/w4ODv8PDw//EBAQ/xER
+        Ef8UFBT/GRkZ/yMjI/8xMTH/RERE/1NTU/8UFBT/BgYG/3R0dP+enp7/oKCg/5ubm/+MjIz/cXFx/0ZG
+        Rv+Kior///////////////////////z8/P/Ozs7/nJyc/6qqqv++vr7/Xl5e/wAAAP9tbW3/nJyc/5CQ
+        kP+IiIj/f39//3V1df9qamr/XFxc/01NTf88PDz/JiYm/wYGBv8AAAD/AQEB/wAAAP8AAAD/AAAA/wAA
+        AP8FBQX/MDAw/7Ozs///////////////////////t7e3/ywsLP8WFhb/LS0t/6ysrP93d3f/BAQE/7q6
+        uv/////////////////////////////////+/v7/+/v7//f39//f39//MTEx/w4ODv+RkZH/m5ub/42N
+        jf+MjIz/mpqa/7y8vP/q6ur///////////////////////b29v9FRUX/WVlZ/76+vv9nZ2f/HBwc/ysr
+        K/8WFhb/1dXV//////////////////////////////////////////////////T09P85OTn/GRkZ/97e
+        3v//////////////////////////////////////////////////////8/Pz/zs7O/99fX3//////+3t
+        7f82Njb/AAAA/09PT//29vb/////////////////////////////////////////////////9fX1/zw8
+        PP8fHx//5OTk////////////////////////////////////////////////////////////jY2N/xUV
+        Ff+pqan/4eHh/zIyMv9HR0f/1dXV////////////////////////////////////////////////////
+        ///39/f/QUFB/ycnJ//q6ur/////////////////////////////////////////////////////////
+        ///v7+//UFBQ/xISEv8lJSX/ISEh/8XFxf//////////////////////////////////////////////
+        //////////////r6+v9ISEj/MDAw//Dw8P//////////////////////////////////////////////
+        ///////////////////n5+f/kpKS/3h4eP/Gxsb//v7+////////////////////////////////////
+        /////////////////////////f39/1JSUv87Ozv/9fX1////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////bGxs/1ZWVv/8/Pz/////////////////////////
+        ////////////////////////AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
+</value>
+  </data>
+  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>

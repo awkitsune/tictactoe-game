@@ -15,8 +15,7 @@ namespace tic_tac_toe
         Move move = new Move();
         ttt_field field = new ttt_field();
 
-        bool isPlaying = false;
-        public void UpdateField(int[,] gameField) //make field cleaning
+        public void UpdateField(int[,] gameField) //make field clean
         {
             switch (gameField[0, 0])
             {
@@ -99,7 +98,9 @@ namespace tic_tac_toe
 
         private void button_restart_Click(object sender, EventArgs e)
         {
-            if (isPlaying) //hmm, i think it's check for playing!
+            panel_game.Enabled = true;
+            button_restart.Text = "Restart?";
+            if (!field.GetWinState())
             {
                 DialogResult result = MessageBox.Show(
                         "Do you really would like to restart your game?", 
@@ -112,111 +113,156 @@ namespace tic_tac_toe
                 {
                     field.Flush();
                     UpdateField(field.GetField());
+                    field.SetWinState(false);
                 }
             }
-            else //not playing
+            else
             {
-                panel_game.Enabled = true;
-                button_restart.Text = "Restart?";
-                isPlaying = true;
+                field.Flush();
+                UpdateField(field.GetField());
+                field.SetWinState(false);
             }
-            
+
         }
 
+        bool CheckWhoWin() //returns true if player, false if computer
+        {
 
+            if (field.GetWinState() && field.GetPlayerState()) return true;
+            if (field.GetWinState() && !field.GetPlayerState()) return false;
+            return false;
+        }
+
+        void WinMessage()
+        {
+            if (field.GetWinState() && CheckWhoWin()) 
+                MessageBox.Show(
+                    "Player won!", 
+                    "Game end",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Information);
+
+            if (field.GetWinState() && !CheckWhoWin()) 
+                MessageBox.Show(
+                    "Computer won!",
+                    "Game end",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Information);
+        }
 
         private void button_0_0_Click(object sender, EventArgs e)
         {
-            if (isPlaying)
+            if (!field.GetWinState())
             {
                 field.PlayerDraw(0, 0);
+                
                 UpdateField(field.GetField());
-                isPlaying = !field.GetWinState();
+
+                WinMessage();
             }
 
         }
 
         private void button_1_0_Click(object sender, EventArgs e)
         {
-            if (isPlaying)
+            if (!field.GetWinState())
             {
                 field.PlayerDraw(1, 0);
+                
                 UpdateField(field.GetField());
-                isPlaying = !field.GetWinState();
+
+                WinMessage();
             }
         }
 
         private void button_2_0_Click(object sender, EventArgs e)
         {
-            if (isPlaying)
+            if (!field.GetWinState())
             {
                 field.PlayerDraw(2, 0);
+                
                 UpdateField(field.GetField());
-                isPlaying = !field.GetWinState();
+
+                WinMessage();
             }
         }
 
         private void button_0_1_Click(object sender, EventArgs e)
         {
-            if (isPlaying)
+            if (!field.GetWinState())
             {
                 field.PlayerDraw(0, 1);
+                
                 UpdateField(field.GetField());
-                isPlaying = !field.GetWinState();
+
+                WinMessage();
             }
         }
 
         private void button_1_1_Click(object sender, EventArgs e)
         {
-            if (isPlaying)
+            if (!field.GetWinState())
             {
                 field.PlayerDraw(1, 1);
+                
                 UpdateField(field.GetField());
-                isPlaying = !field.GetWinState();
+
+                WinMessage();
             }
         }
 
         private void button_2_1_Click(object sender, EventArgs e)
         {
-            if (isPlaying)
+            if (!field.GetWinState())
             {
                 field.PlayerDraw(2, 1);
+                
                 UpdateField(field.GetField());
-                isPlaying = !field.GetWinState();
+
+                WinMessage();
             }
         }
 
         private void button_0_2_Click(object sender, EventArgs e)
         {
-            if (isPlaying)
+            if (!field.GetWinState())
             {
                 field.PlayerDraw(0, 2);
+                
                 UpdateField(field.GetField());
-                isPlaying = !field.GetWinState();
+
+                WinMessage();
             }
         }
 
         private void button_1_2_Click(object sender, EventArgs e)
         {
-            if (isPlaying)
+            if (!field.GetWinState())
             {
                 field.PlayerDraw(1, 2);
+                
                 UpdateField(field.GetField());
-                isPlaying = !field.GetWinState();
+
+                WinMessage();
             }
         }
 
         private void button_2_2_Click(object sender, EventArgs e)
         {
-            if (isPlaying)
+            if (!field.GetWinState())
             {
                 field.PlayerDraw(2, 2);
+                
                 UpdateField(field.GetField());
-                isPlaying = !field.GetWinState();
+
+                WinMessage();
             }
         }
 
-
-
+        private void button_about_Click(object sender, EventArgs e)
+        {
+            About about = new About();
+            about.Show();
+        }
     }
 }
