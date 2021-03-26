@@ -118,7 +118,8 @@ namespace tic_tac_toe
 
             if (!CheckForWin(false))
             {
-                _isWinned = false; _isPlayerWinned = false;
+                _isWinned = false; 
+                _isPlayerWinned = false;
             }
             else
             {
@@ -130,7 +131,7 @@ namespace tic_tac_toe
         void FindPosition()
         {
             Console.WriteLine("Searching for cells");
-            //searching 4 availible cells to make move
+            //searching for availible cells to make move
             for (int i = 0; i < 3; i++)
             {
                 for (int j = 0; j < 3; j++)
@@ -144,7 +145,7 @@ namespace tic_tac_toe
             {
                 for (int j = 0; j < 3; j++)
                 {
-                    //searching 4 cells to make move
+                    //searching for cells to make move
                     if (_field[i, j] == 1)
                     {
                         try { if (!(_field[i - 1, j - 1] == 2)) _weights[i - 1, j - 1] += 0.1; }
@@ -170,7 +171,7 @@ namespace tic_tac_toe
             }
             PrintFields();
 
-            //searching 4 player's combinations 2 make ai supress it
+            //searching for player's combinations 2 make ai supress it
             Console.WriteLine("Searching for player's winnable combinations to preserve it...");
 
             Console.WriteLine("Searching in horisontal positions...");
@@ -204,8 +205,8 @@ namespace tic_tac_toe
                         {
                             for (int k = 0; k < 3; k++)
                             {
-                                if (_field[k, i] == 0) //there is some mods
-                                    _weights[k, i] += 0.3; //there is some mods!
+                                if (_field[k, i] == 0)
+                                    _weights[k, i] += 0.3;
                             }
                         }
                     }
@@ -233,14 +234,13 @@ namespace tic_tac_toe
                 for (int k = 0; k < 3; k++)
                 {
                     if (_field[2 - k, k] == 0) 
-                        _weights[2 - k, k] += 0.3; //there is some mods inverted x y
+                        _weights[2 - k, k] += 0.3;
                 }
             }
 
             PrintFields();
 
-            //searching 4 2-len ai's chains (yes, there's some shitcode) pls dont watch it
-            //i probably don't need it, but it needed to make win combinations more weighted
+            //searching for 2-len ai's chains (yes, there's some shitcode) pls dont watch it
             {
 
                 if (_field[0, 0] == 1 && _field[0, 1] == 1 && _field[0, 2] == 0)
@@ -326,7 +326,7 @@ namespace tic_tac_toe
                 {
                     if (_field[i, j] == 0)
                     {
-                        _weights[i, j] += (double)rnd_cell.Next(0, 5) / 100;
+                        _weights[i, j] += (double)rnd_cell.Next(0, 8) / 100;
                     }
                 }
             }

@@ -12,63 +12,63 @@ namespace tic_tac_toe
 
         string username = "";
 
-        public void UpdateField(int[,] gameField) //make field clean
+        public void UpdateField(int[,] gameField) //make field updates
         {
             try
             {
                 switch (gameField[0, 0])
                 {
                     case 0: button_0_0.Image = null; break;
-                    case 1: button_0_0.Image = Image.FromFile($"cross_{field.GetIcon(0, 0)}.png"); break;
-                    case 2: button_0_0.Image = Image.FromFile($"zero_{field.GetIcon(0, 0)}.png"); break;
+                    case 1: button_0_0.Image = Image.FromFile($"resources/cross_{field.GetIcon(0, 0)}.png"); break;
+                    case 2: button_0_0.Image = Image.FromFile($"resources/zero_{field.GetIcon(0, 0)}.png"); break;
                 }
                 switch (gameField[1, 0])
                 {
                     case 0: button_1_0.Image = null; break;
-                    case 1: button_1_0.Image = Image.FromFile($"cross_{field.GetIcon(1, 0)}.png"); break;
-                    case 2: button_1_0.Image = Image.FromFile($"zero_{field.GetIcon(1, 0)}.png"); break;
+                    case 1: button_1_0.Image = Image.FromFile($"resources/cross_{field.GetIcon(1, 0)}.png"); break;
+                    case 2: button_1_0.Image = Image.FromFile($"resources/zero_{field.GetIcon(1, 0)}.png"); break;
                 }
                 switch (gameField[2, 0])
                 {
                     case 0: button_2_0.Image = null; break;
-                    case 1: button_2_0.Image = Image.FromFile($"cross_{field.GetIcon(2, 0)}.png"); break;
-                    case 2: button_2_0.Image = Image.FromFile($"zero_{field.GetIcon(2, 0)}.png"); break;
+                    case 1: button_2_0.Image = Image.FromFile($"resources/cross_{field.GetIcon(2, 0)}.png"); break;
+                    case 2: button_2_0.Image = Image.FromFile($"resources/zero_{field.GetIcon(2, 0)}.png"); break;
                 }
                 switch (gameField[0, 1])
                 {
                     case 0: button_0_1.Image = null; break;
-                    case 1: button_0_1.Image = Image.FromFile($"cross_{field.GetIcon(0, 1)}.png"); break;
-                    case 2: button_0_1.Image = Image.FromFile($"zero_{field.GetIcon(0, 1)}.png"); break;
+                    case 1: button_0_1.Image = Image.FromFile($"resources/cross_{field.GetIcon(0, 1)}.png"); break;
+                    case 2: button_0_1.Image = Image.FromFile($"resources/zero_{field.GetIcon(0, 1)}.png"); break;
                 }
                 switch (gameField[1, 1])
                 {
                     case 0: button_1_1.Image = null; break;
-                    case 1: button_1_1.Image = Image.FromFile($"cross_{field.GetIcon(1, 1)}.png"); break;
-                    case 2: button_1_1.Image = Image.FromFile($"zero_{field.GetIcon(1, 1)}.png"); break;
+                    case 1: button_1_1.Image = Image.FromFile($"resources/cross_{field.GetIcon(1, 1)}.png"); break;
+                    case 2: button_1_1.Image = Image.FromFile($"resources/zero_{field.GetIcon(1, 1)}.png"); break;
                 }
                 switch (gameField[2, 1])
                 {
                     case 0: button_2_1.Image = null; break;
-                    case 1: button_2_1.Image = Image.FromFile($"cross_{field.GetIcon(2, 1)}.png"); break;
-                    case 2: button_2_1.Image = Image.FromFile($"zero_{field.GetIcon(2, 1)}.png"); break;
+                    case 1: button_2_1.Image = Image.FromFile($"resources/cross_{field.GetIcon(2, 1)}.png"); break;
+                    case 2: button_2_1.Image = Image.FromFile($"resources/zero_{field.GetIcon(2, 1)}.png"); break;
                 }
                 switch (gameField[0, 2])
                 {
                     case 0: button_0_2.Image = null; break;
-                    case 1: button_0_2.Image = Image.FromFile($"cross_{field.GetIcon(0, 2)}.png"); break;
-                    case 2: button_0_2.Image = Image.FromFile($"zero_{field.GetIcon(0, 2)}.png"); break;
+                    case 1: button_0_2.Image = Image.FromFile($"resources/cross_{field.GetIcon(0, 2)}.png"); break;
+                    case 2: button_0_2.Image = Image.FromFile($"resources/zero_{field.GetIcon(0, 2)}.png"); break;
                 }
                 switch (gameField[1, 2])
                 {
                     case 0: button_1_2.Image = null; break;
-                    case 1: button_1_2.Image = Image.FromFile($"cross_{field.GetIcon(1, 2)}.png"); break;
-                    case 2: button_1_2.Image = Image.FromFile($"zero_{field.GetIcon(1, 2)}.png"); break;
+                    case 1: button_1_2.Image = Image.FromFile($"resources/cross_{field.GetIcon(1, 2)}.png"); break;
+                    case 2: button_1_2.Image = Image.FromFile($"resources/zero_{field.GetIcon(1, 2)}.png"); break;
                 }
                 switch (gameField[2, 2])
                 {
                     case 0: button_2_2.Image = null; break;
-                    case 1: button_2_2.Image = Image.FromFile($"cross_{field.GetIcon(2, 2)}.png"); break;
-                    case 2: button_2_2.Image = Image.FromFile($"zero_{field.GetIcon(2, 2)}.png"); break;
+                    case 1: button_2_2.Image = Image.FromFile($"resources/cross_{field.GetIcon(2, 2)}.png"); break;
+                    case 2: button_2_2.Image = Image.FromFile($"resources/zero_{field.GetIcon(2, 2)}.png"); break;
                 }
             }
             catch (FileNotFoundException)
@@ -80,7 +80,7 @@ namespace tic_tac_toe
                         MessageBoxIcon.Warning,
                         MessageBoxDefaultButton.Button1);
 
-                if (result == DialogResult.Yes)
+                if (result == DialogResult.OK)
                 {
                     Application.Exit();
                 }
@@ -111,6 +111,7 @@ namespace tic_tac_toe
                     using (BinaryReader file = new BinaryReader(File.OpenRead("userdata.dat")))
                     {
                         username = file.ReadString();
+                        label_username.Text = username;
                         panel_userdata.Visible = true;
                         panel_login.Visible = false;
                         panel_game.Enabled = true;
@@ -140,6 +141,7 @@ namespace tic_tac_toe
             if (textBox_username.Text.Length > 0)
             {
                 username = textBox_username.Text;
+                label_username.Text = username;
                 panel_userdata.Visible = true;
                 panel_login.Visible = false;
                 panel_game.Enabled = true;
