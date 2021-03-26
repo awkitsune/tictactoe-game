@@ -147,64 +147,70 @@
   <data name="&gt;&gt;pictureBox1.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <data name="label_username.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="label_program.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label_program.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 15.75pt</value>
   </data>
-  <data name="label_username.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="label_program.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="label_username.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="label_program.Location" type="System.Drawing.Point, System.Drawing">
     <value>8, 91</value>
   </data>
-  <data name="label_username.Size" type="System.Drawing.Size, System.Drawing">
-    <value>104, 30</value>
+  <data name="label_program.Size" type="System.Drawing.Size, System.Drawing">
+    <value>101, 30</value>
   </data>
-  <data name="label_username.TabIndex" type="System.Int32, mscorlib">
+  <data name="label_program.TabIndex" type="System.Int32, mscorlib">
     <value>11</value>
   </data>
-  <data name="label_username.Text" xml:space="preserve">
+  <data name="label_program.Text" xml:space="preserve">
     <value>TicTacToe</value>
   </data>
-  <data name="&gt;&gt;label_username.Name" xml:space="preserve">
-    <value>label_username</value>
+  <data name="&gt;&gt;label_program.Name" xml:space="preserve">
+    <value>label_program</value>
   </data>
-  <data name="&gt;&gt;label_username.Type" xml:space="preserve">
+  <data name="&gt;&gt;label_program.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;label_username.Parent" xml:space="preserve">
+  <data name="&gt;&gt;label_program.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;label_username.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;label_program.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="label_vs_who.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="label_dev.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label_dev.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 11.25pt</value>
   </data>
-  <data name="label_vs_who.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="label_dev.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="label_vs_who.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="label_dev.Location" type="System.Drawing.Point, System.Drawing">
     <value>9, 121</value>
   </data>
-  <data name="label_vs_who.Size" type="System.Drawing.Size, System.Drawing">
-    <value>103, 23</value>
+  <data name="label_dev.Size" type="System.Drawing.Size, System.Drawing">
+    <value>96, 20</value>
   </data>
-  <data name="label_vs_who.TabIndex" type="System.Int32, mscorlib">
+  <data name="label_dev.TabIndex" type="System.Int32, mscorlib">
     <value>12</value>
   </data>
-  <data name="label_vs_who.Text" xml:space="preserve">
+  <data name="label_dev.Text" xml:space="preserve">
     <value>by Awkitsune</value>
   </data>
-  <data name="&gt;&gt;label_vs_who.Name" xml:space="preserve">
-    <value>label_vs_who</value>
+  <data name="&gt;&gt;label_dev.Name" xml:space="preserve">
+    <value>label_dev</value>
   </data>
-  <data name="&gt;&gt;label_vs_who.Type" xml:space="preserve">
+  <data name="&gt;&gt;label_dev.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;label_vs_who.Parent" xml:space="preserve">
+  <data name="&gt;&gt;label_dev.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;label_vs_who.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;label_dev.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
   <data name="label1.AutoSize" type="System.Boolean, mscorlib">
@@ -277,7 +283,7 @@
     <value>6, 60</value>
   </data>
   <data name="label_answer.Size" type="System.Drawing.Size, System.Drawing">
-    <value>232, 20</value>
+    <value>188, 20</value>
   </data>
   <data name="label_answer.TabIndex" type="System.Int32, mscorlib">
     <value>14</value>
@@ -301,10 +307,10 @@
     <value>Segoe UI, 8.25pt</value>
   </data>
   <data name="groupBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>13, 147</value>
+    <value>13, 172</value>
   </data>
   <data name="groupBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>244, 87</value>
+    <value>200, 87</value>
   </data>
   <data name="groupBox1.TabIndex" type="System.Int32, mscorlib">
     <value>14</value>
@@ -327,23 +333,23 @@
   <data name="&gt;&gt;groupBox1.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <data name="linkLabel1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
   <data name="linkLabel1.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 9.75pt</value>
   </data>
   <data name="linkLabel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>146, 123</value>
+    <value>10, 144</value>
   </data>
   <data name="linkLabel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>111, 21</value>
+    <value>111, 17</value>
   </data>
   <data name="linkLabel1.TabIndex" type="System.Int32, mscorlib">
     <value>15</value>
   </data>
   <data name="linkLabel1.Text" xml:space="preserve">
     <value>Project on GitHub</value>
-  </data>
-  <data name="linkLabel1.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>TopRight</value>
   </data>
   <data name="&gt;&gt;linkLabel1.Name" xml:space="preserve">
     <value>linkLabel1</value>
@@ -370,16 +376,13 @@
     <value>GrowAndShrink</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>269, 271</value>
-  </data>
-  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+    <value>230, 271</value>
   </data>
   <data name="$this.MaximumSize" type="System.Drawing.Size, System.Drawing">
-    <value>285, 310</value>
+    <value>246, 310</value>
   </data>
   <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>285, 200</value>
+    <value>246, 210</value>
   </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>

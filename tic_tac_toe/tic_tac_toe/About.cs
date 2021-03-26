@@ -39,5 +39,24 @@ namespace tic_tac_toe
         {
             System.Diagnostics.Process.Start("https://github.com/awkitsune/tictactoe-game");
         }
+
+        private void About_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label_username_Click(object sender, EventArgs e)
+        {
+            Random rand = new Random();
+            switch (rand.Next(0, 5))
+            {
+                case 0: label_program.ForeColor = Color.Orange; label_dev.Text = label_dev.Text + "🦊🦊🦊"; break;
+                case 1: label_program.ForeColor = Color.Cyan; break;
+                case 2: label_program.ForeColor = Color.Magenta; break;
+                case 3: label_program.ForeColor = Color.DarkBlue; break;
+                case 4: label_program.ForeColor = Color.Black; break;
+
+            }
+        }
     }
 }

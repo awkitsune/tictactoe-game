@@ -94,6 +94,7 @@ namespace tic_tac_toe
 
             panel_game.Enabled = false;
             panel_userdata.Visible = false;
+            button_restart.Enabled = false;
 
             UpdateField(field.GetField());
         }
@@ -114,7 +115,7 @@ namespace tic_tac_toe
                         label_username.Text = username;
                         panel_userdata.Visible = true;
                         panel_login.Visible = false;
-                        panel_game.Enabled = true;
+                        button_restart.Enabled = true;
                     }
                 }
                 catch (IOException)
@@ -144,7 +145,7 @@ namespace tic_tac_toe
                 label_username.Text = username;
                 panel_userdata.Visible = true;
                 panel_login.Visible = false;
-                panel_game.Enabled = true;
+                button_restart.Enabled = true;
                 try
                 {
                     using (BinaryWriter file = new BinaryWriter(File.OpenWrite("userdata.dat")))
@@ -157,6 +158,7 @@ namespace tic_tac_toe
                     
                 }
             }
+
 
         }
 
@@ -331,7 +333,7 @@ namespace tic_tac_toe
         private void button_about_Click(object sender, EventArgs e)
         {
             About about = new About();
-            about.Show();
+            about.ShowDialog();
         }
     }
 }

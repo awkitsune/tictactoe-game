@@ -31,8 +31,8 @@ namespace tic_tac_toe
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(About));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label_username = new System.Windows.Forms.Label();
-            this.label_vs_who = new System.Windows.Forms.Label();
+            this.label_program = new System.Windows.Forms.Label();
+            this.label_dev = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.comboBox_rps = new System.Windows.Forms.ComboBox();
             this.label_answer = new System.Windows.Forms.Label();
@@ -50,15 +50,16 @@ namespace tic_tac_toe
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // label_username
+            // label_program
             // 
-            resources.ApplyResources(this.label_username, "label_username");
-            this.label_username.Name = "label_username";
+            resources.ApplyResources(this.label_program, "label_program");
+            this.label_program.Name = "label_program";
+            this.label_program.Click += new System.EventHandler(this.label_username_Click);
             // 
-            // label_vs_who
+            // label_dev
             // 
-            resources.ApplyResources(this.label_vs_who, "label_vs_who");
-            this.label_vs_who.Name = "label_vs_who";
+            resources.ApplyResources(this.label_dev, "label_dev");
+            this.label_dev.Name = "label_dev";
             // 
             // label1
             // 
@@ -101,10 +102,11 @@ namespace tic_tac_toe
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.label_vs_who);
-            this.Controls.Add(this.label_username);
+            this.Controls.Add(this.label_dev);
+            this.Controls.Add(this.label_program);
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
@@ -113,18 +115,20 @@ namespace tic_tac_toe
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
             this.TopMost = true;
+            this.Load += new System.EventHandler(this.About_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label_username;
-        private System.Windows.Forms.Label label_vs_who;
+        private System.Windows.Forms.Label label_program;
+        private System.Windows.Forms.Label label_dev;
         private System.Windows.Forms.ComboBox comboBox_rps;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label_answer;
