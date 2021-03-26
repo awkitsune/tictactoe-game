@@ -114,6 +114,7 @@ namespace tic_tac_toe
 
             Console.WriteLine($"Placed ai's cross to {coords[0]}, {coords[1]}");
             AiDraw(coords[0], coords[1]);
+            Console.WriteLine();
 
             if (!CheckForWin(false))
             {
@@ -124,23 +125,20 @@ namespace tic_tac_toe
                 _isWinned = true;
                 _isPlayerWinned = false;
             }
+            ClearWeights();
         }
         void FindPosition()
         {
-            Console.WriteLine("Searching 4 cells");
+            Console.WriteLine("Searching for cells");
             //searching 4 availible cells to make move
             for (int i = 0; i < 3; i++)
             {
                 for (int j = 0; j < 3; j++)
                 {
-                    _weights[i, j] = GetFreeCells(_field[j, i]);
-
-                    Console.Write($"{_weights[i, j]}    ");
+                    _weights[j, i] = GetFreeCells(_field[j, i]);
                 }
-                Console.WriteLine();
             }
-
-            Console.WriteLine();
+            PrintFields();
 
             for (int i = 0; i < 3; i++)
             {
@@ -168,10 +166,9 @@ namespace tic_tac_toe
                         try { if (!(_field[i + 1, j + 1] == 2)) _weights[i + 1, j + 1] += 0.1; }
                         catch (Exception) { }
                     }
-                    Console.Write($"{_weights[i, j]}    ");
                 }
-                Console.WriteLine();
             }
+            PrintFields();
 
             //searching 4 player's combinations 2 make ai supress it
             Console.WriteLine("Searching for player's winnable combinations to preserve it...");
@@ -192,10 +189,9 @@ namespace tic_tac_toe
                             }
                         }
                     }
-                    Console.Write($"{_weights[i, j]}    ");
                 }
-                Console.WriteLine();
             }
+            PrintFields();
 
             Console.WriteLine("Searching in vertical positions...");
             for (int i = 0; i < 3; i++)
@@ -208,15 +204,14 @@ namespace tic_tac_toe
                         {
                             for (int k = 0; k < 3; k++)
                             {
-                                if (_field[k, i] == 0)
-                                    _weights[k, i] += 0.3;
+                                if (_field[k, i] == 0) //there is some mods
+                                    _weights[k, i] += 0.3; //there is some mods!
                             }
                         }
                     }
-                    Console.Write($"{_weights[i, j]}    ");
                 }
-                Console.WriteLine();
             }
+            PrintFields();
 
             Console.WriteLine("Searching in main diagonal positions...");
 
@@ -229,14 +224,7 @@ namespace tic_tac_toe
                 }
             }
 
-            for (int i = 0; i < 3; i++)
-            {
-                for (int j = 0; j < 3; j++)
-                {
-                    Console.Write($"{_weights[i, j]}    ");
-                }
-                Console.WriteLine();
-            }
+            PrintFields();
 
             Console.WriteLine("Searching in additional diagonal positions...");
 
@@ -244,19 +232,12 @@ namespace tic_tac_toe
             {
                 for (int k = 0; k < 3; k++)
                 {
-                    if (_field[2 - k, k] == 0)
-                        _weights[k, 2 - k] += 0.3;
+                    if (_field[2 - k, k] == 0) 
+                        _weights[2 - k, k] += 0.3; //there is some mods inverted x y
                 }
             }
 
-            for (int i = 0; i < 3; i++)
-            {
-                for (int j = 0; j < 3; j++)
-                {
-                    Console.Write($"{_weights[i, j]}    ");
-                }
-                Console.WriteLine();
-            }
+            PrintFields();
 
             //searching 4 2-len ai's chains (yes, there's some shitcode) pls dont watch it
             //i probably don't need it, but it needed to make win combinations more weighted
@@ -345,12 +326,11 @@ namespace tic_tac_toe
                 {
                     if (_field[i, j] == 0)
                     {
-                        _weights[i, j] += (double)rnd_cell.Next(0, 20) / 100;
+                        _weights[i, j] += (double)rnd_cell.Next(0, 5) / 100;
                     }
-                    Console.Write($"{_weights[i, j]}    ");
                 }
-                Console.WriteLine();
             }
+            PrintFields();
         }
         double GetFreeCells(int who)
         {
@@ -393,7 +373,36 @@ namespace tic_tac_toe
 
             return false;
         }
-        
+
+        void ClearWeights()
+        {
+            for (int i = 0; i < 3; i++)
+            {
+                for (int j = 0; j < 3; j++)
+                {
+                    _weights[i, j] = 0;
+                }
+            }
+        }
+
+        void PrintFields()
+        {
+            for (int i = 0; i < 3; i++)
+            {
+                for (int j = 0; j < 3; j++)
+                {
+                    Console.Write($"{_field[i, j]}\t");
+                }
+                Console.Write("\t\t");
+                for (int j = 0; j < 3; j++)
+                {
+                    Console.Write($"{_weights[i, j]}\t");
+                }
+                Console.WriteLine();
+            }
+            Console.WriteLine();
+        }
+
         public TicTacToeField()
         {
             for (int i = 0; i < 3; i++)
