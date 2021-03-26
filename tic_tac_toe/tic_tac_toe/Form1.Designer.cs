@@ -49,6 +49,7 @@ namespace tic_tac_toe
             this.textBox_username = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel_userdata = new System.Windows.Forms.Panel();
+            this.label_wins_loses = new System.Windows.Forms.Label();
             this.panel_game.SuspendLayout();
             this.panel_login.SuspendLayout();
             this.panel_userdata.SuspendLayout();
@@ -82,6 +83,7 @@ namespace tic_tac_toe
             // panel_game
             // 
             resources.ApplyResources(this.panel_game, "panel_game");
+            this.panel_game.BackColor = System.Drawing.SystemColors.Window;
             this.panel_game.BackgroundImage = global::tic_tac_toe.Properties.Resources.ttt_bg;
             this.panel_game.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel_game.Controls.Add(this.button_0_0);
@@ -230,10 +232,16 @@ namespace tic_tac_toe
             // 
             // panel_userdata
             // 
-            resources.ApplyResources(this.panel_userdata, "panel_userdata");
+            this.panel_userdata.Controls.Add(this.label_wins_loses);
             this.panel_userdata.Controls.Add(this.label_username);
             this.panel_userdata.Controls.Add(this.label_vs_who);
+            resources.ApplyResources(this.panel_userdata, "panel_userdata");
             this.panel_userdata.Name = "panel_userdata";
+            // 
+            // label_wins_loses
+            // 
+            resources.ApplyResources(this.label_wins_loses, "label_wins_loses");
+            this.label_wins_loses.Name = "label_wins_loses";
             // 
             // Form1
             // 
@@ -249,11 +257,13 @@ namespace tic_tac_toe
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Form1";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel_game.ResumeLayout(false);
             this.panel_login.ResumeLayout(false);
             this.panel_login.PerformLayout();
             this.panel_userdata.ResumeLayout(false);
+            this.panel_userdata.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -280,6 +290,7 @@ namespace tic_tac_toe
         private System.Windows.Forms.TextBox textBox_username;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel_userdata;
+        private System.Windows.Forms.Label label_wins_loses;
     }
 }
 

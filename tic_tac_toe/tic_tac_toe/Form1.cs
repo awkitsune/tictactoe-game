@@ -11,6 +11,8 @@ namespace tic_tac_toe
         TicTacToeField field = new TicTacToeField();
 
         string username = "";
+        int wins = 0;
+        int loses = 0;
 
         public void UpdateField(int[,] gameField) //make field updates
         {
@@ -112,10 +114,13 @@ namespace tic_tac_toe
                     using (BinaryReader file = new BinaryReader(File.OpenRead("userdata.dat")))
                     {
                         username = file.ReadString();
+                        wins = file.ReadInt32();
+                        loses = file.ReadInt32();
                         label_username.Text = username;
                         panel_userdata.Visible = true;
                         panel_login.Visible = false;
                         button_restart.Enabled = true;
+                        label_wins_loses.Visible = true;
                     }
                 }
                 catch (IOException)
@@ -126,6 +131,7 @@ namespace tic_tac_toe
                         MessageBoxButtons.YesNo,
                         MessageBoxIcon.Warning,
                         MessageBoxDefaultButton.Button1);
+
                     if (result == DialogResult.Yes)
                     {
                         File.Delete("userdata.dat");
@@ -136,6 +142,7 @@ namespace tic_tac_toe
                     }
                 }
             }
+            UpdateWinLose();
         }
         private void button_login_Click(object sender, EventArgs e)
         {
@@ -146,17 +153,7 @@ namespace tic_tac_toe
                 panel_userdata.Visible = true;
                 panel_login.Visible = false;
                 button_restart.Enabled = true;
-                try
-                {
-                    using (BinaryWriter file = new BinaryWriter(File.OpenWrite("userdata.dat")))
-                    {
-                        file.Write(username);
-                    }
-                }
-                catch (IOException)
-                {
-                    
-                }
+                label_wins_loses.Visible = true;
             }
 
 
@@ -196,6 +193,27 @@ namespace tic_tac_toe
 
         }
 
+        private void Form1_FormClosing(Object sender, FormClosingEventArgs e)
+        {
+            try
+            {
+                using (BinaryWriter file = new BinaryWriter(File.OpenWrite("userdata.dat")))
+                {
+                    file.Write(username);
+                    file.Write(wins);
+                    file.Write(loses);
+                }
+            }
+            catch (IOException)
+            {
+
+            }
+        }
+
+        void UpdateWinLose()
+        { 
+            label_wins_loses.Text = $"Wins: {wins}, Loses: {loses}";
+        }
         bool CheckWhoWin() //returns true if player, false if computer
         {
 
@@ -203,22 +221,28 @@ namespace tic_tac_toe
             if (field.GetWinState() && !field.GetPlayerState()) return false;
             return false;
         }
-
         void WinMessage()
         {
-            if (field.GetWinState() && CheckWhoWin()) 
+            if (field.GetWinState() && CheckWhoWin())
+            {
                 MessageBox.Show(
-                    "Player won!", 
+                    "Player won!",
                     "Game end",
                     MessageBoxButtons.OK,
                     MessageBoxIcon.Information);
-
-            if (field.GetWinState() && !CheckWhoWin()) 
+                wins++;
+                UpdateWinLose();
+            }
+            if (field.GetWinState() && !CheckWhoWin())
+            {
                 MessageBox.Show(
                     "Computer won!",
                     "Game end",
                     MessageBoxButtons.OK,
                     MessageBoxIcon.Information);
+                loses++;
+                UpdateWinLose();
+            }
         }
 
         private void button_0_0_Click(object sender, EventArgs e)

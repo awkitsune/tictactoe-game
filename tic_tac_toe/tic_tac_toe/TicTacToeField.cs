@@ -326,7 +326,7 @@ namespace tic_tac_toe
                 {
                     if (_field[i, j] == 0)
                     {
-                        _weights[i, j] += (double)rnd_cell.Next(0, 8) / 100;
+                        _weights[i, j] += (double)rnd_cell.Next(0, 12) / 100;
                     }
                 }
             }

@@ -126,7 +126,7 @@
     <value>NoControl</value>
   </data>
   <data name="label_username.Location" type="System.Drawing.Point, System.Drawing">
-    <value>-5, 0</value>
+    <value>-5, 27</value>
   </data>
   <data name="label_username.Size" type="System.Drawing.Size, System.Drawing">
     <value>246, 30</value>
@@ -148,7 +148,7 @@
     <value>panel_userdata</value>
   </data>
   <data name="&gt;&gt;label_username.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="label_vs_who.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 11.25pt</value>
@@ -157,7 +157,7 @@
     <value>NoControl</value>
   </data>
   <data name="label_vs_who.Location" type="System.Drawing.Point, System.Drawing">
-    <value>-4, 30</value>
+    <value>-4, 57</value>
   </data>
   <data name="label_vs_who.Size" type="System.Drawing.Size, System.Drawing">
     <value>245, 23</value>
@@ -178,7 +178,7 @@
     <value>panel_userdata</value>
   </data>
   <data name="&gt;&gt;label_vs_who.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="button_restart.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -242,135 +242,6 @@
   </data>
   <data name="panel_game.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Center</value>
-  </data>
-  <data name="&gt;&gt;button_0_0.Name" xml:space="preserve">
-    <value>button_0_0</value>
-  </data>
-  <data name="&gt;&gt;button_0_0.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button_0_0.Parent" xml:space="preserve">
-    <value>panel_game</value>
-  </data>
-  <data name="&gt;&gt;button_0_0.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;button_2_2.Name" xml:space="preserve">
-    <value>button_2_2</value>
-  </data>
-  <data name="&gt;&gt;button_2_2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button_2_2.Parent" xml:space="preserve">
-    <value>panel_game</value>
-  </data>
-  <data name="&gt;&gt;button_2_2.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;button_1_0.Name" xml:space="preserve">
-    <value>button_1_0</value>
-  </data>
-  <data name="&gt;&gt;button_1_0.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button_1_0.Parent" xml:space="preserve">
-    <value>panel_game</value>
-  </data>
-  <data name="&gt;&gt;button_1_0.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;button_1_2.Name" xml:space="preserve">
-    <value>button_1_2</value>
-  </data>
-  <data name="&gt;&gt;button_1_2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button_1_2.Parent" xml:space="preserve">
-    <value>panel_game</value>
-  </data>
-  <data name="&gt;&gt;button_1_2.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;button_2_0.Name" xml:space="preserve">
-    <value>button_2_0</value>
-  </data>
-  <data name="&gt;&gt;button_2_0.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button_2_0.Parent" xml:space="preserve">
-    <value>panel_game</value>
-  </data>
-  <data name="&gt;&gt;button_2_0.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;button_0_2.Name" xml:space="preserve">
-    <value>button_0_2</value>
-  </data>
-  <data name="&gt;&gt;button_0_2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button_0_2.Parent" xml:space="preserve">
-    <value>panel_game</value>
-  </data>
-  <data name="&gt;&gt;button_0_2.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;button_0_1.Name" xml:space="preserve">
-    <value>button_0_1</value>
-  </data>
-  <data name="&gt;&gt;button_0_1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button_0_1.Parent" xml:space="preserve">
-    <value>panel_game</value>
-  </data>
-  <data name="&gt;&gt;button_0_1.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;button_2_1.Name" xml:space="preserve">
-    <value>button_2_1</value>
-  </data>
-  <data name="&gt;&gt;button_2_1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button_2_1.Parent" xml:space="preserve">
-    <value>panel_game</value>
-  </data>
-  <data name="&gt;&gt;button_2_1.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;button_1_1.Name" xml:space="preserve">
-    <value>button_1_1</value>
-  </data>
-  <data name="&gt;&gt;button_1_1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button_1_1.Parent" xml:space="preserve">
-    <value>panel_game</value>
-  </data>
-  <data name="&gt;&gt;button_1_1.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="panel_game.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 124</value>
-  </data>
-  <data name="panel_game.Size" type="System.Drawing.Size, System.Drawing">
-    <value>245, 245</value>
-  </data>
-  <data name="panel_game.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="&gt;&gt;panel_game.Name" xml:space="preserve">
-    <value>panel_game</value>
-  </data>
-  <data name="&gt;&gt;panel_game.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panel_game.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;panel_game.ZOrder" xml:space="preserve">
-    <value>4</value>
   </data>
   <data name="button_0_0.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -642,68 +513,29 @@
   <data name="&gt;&gt;button_1_1.ZOrder" xml:space="preserve">
     <value>8</value>
   </data>
-  <data name="panel_login.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="panel_game.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 124</value>
+  </data>
+  <data name="panel_game.Size" type="System.Drawing.Size, System.Drawing">
+    <value>245, 245</value>
+  </data>
+  <data name="panel_game.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;panel_game.Name" xml:space="preserve">
+    <value>panel_game</value>
+  </data>
+  <data name="&gt;&gt;panel_game.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel_game.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panel_game.ZOrder" xml:space="preserve">
+    <value>4</value>
   </data>
   <data name="panel_login.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
     <value>GrowAndShrink</value>
-  </data>
-  <data name="&gt;&gt;button_login.Name" xml:space="preserve">
-    <value>button_login</value>
-  </data>
-  <data name="&gt;&gt;button_login.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button_login.Parent" xml:space="preserve">
-    <value>panel_login</value>
-  </data>
-  <data name="&gt;&gt;button_login.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;textBox_username.Name" xml:space="preserve">
-    <value>textBox_username</value>
-  </data>
-  <data name="&gt;&gt;textBox_username.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBox_username.Parent" xml:space="preserve">
-    <value>panel_login</value>
-  </data>
-  <data name="&gt;&gt;textBox_username.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;label1.Name" xml:space="preserve">
-    <value>label1</value>
-  </data>
-  <data name="&gt;&gt;label1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
-    <value>panel_login</value>
-  </data>
-  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="panel_login.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 13</value>
-  </data>
-  <data name="panel_login.Size" type="System.Drawing.Size, System.Drawing">
-    <value>244, 46</value>
-  </data>
-  <data name="panel_login.TabIndex" type="System.Int32, mscorlib">
-    <value>17</value>
-  </data>
-  <data name="&gt;&gt;panel_login.Name" xml:space="preserve">
-    <value>panel_login</value>
-  </data>
-  <data name="&gt;&gt;panel_login.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panel_login.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;panel_login.ZOrder" xml:space="preserve">
-    <value>1</value>
   </data>
   <data name="button_login.Location" type="System.Drawing.Point, System.Drawing">
     <value>166, 21</value>
@@ -777,17 +609,59 @@
   <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="panel_userdata.AutoSize" type="System.Boolean, mscorlib">
+  <data name="panel_login.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 13</value>
+  </data>
+  <data name="panel_login.Size" type="System.Drawing.Size, System.Drawing">
+    <value>245, 46</value>
+  </data>
+  <data name="panel_login.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;panel_login.Name" xml:space="preserve">
+    <value>panel_login</value>
+  </data>
+  <data name="&gt;&gt;panel_login.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel_login.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panel_login.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="label_wins_loses.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="panel_userdata.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
-    <value>GrowAndShrink</value>
+  <data name="label_wins_loses.Location" type="System.Drawing.Point, System.Drawing">
+    <value>-3, 14</value>
+  </data>
+  <data name="label_wins_loses.Size" type="System.Drawing.Size, System.Drawing">
+    <value>91, 13</value>
+  </data>
+  <data name="label_wins_loses.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="label_wins_loses.Text" xml:space="preserve">
+    <value>Wins: 0, Loses: 0</value>
+  </data>
+  <data name="&gt;&gt;label_wins_loses.Name" xml:space="preserve">
+    <value>label_wins_loses</value>
+  </data>
+  <data name="&gt;&gt;label_wins_loses.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_wins_loses.Parent" xml:space="preserve">
+    <value>panel_userdata</value>
+  </data>
+  <data name="&gt;&gt;label_wins_loses.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="panel_userdata.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 65</value>
+    <value>12, 38</value>
   </data>
   <data name="panel_userdata.Size" type="System.Drawing.Size, System.Drawing">
-    <value>244, 53</value>
+    <value>245, 80</value>
   </data>
   <data name="panel_userdata.TabIndex" type="System.Int32, mscorlib">
     <value>18</value>
@@ -896,7 +770,7 @@
     <value>CenterScreen</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>Tic Tac Toe</value>
+    <value>tictactoe!</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>Form1</value>
