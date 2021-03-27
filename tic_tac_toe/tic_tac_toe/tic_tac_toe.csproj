@@ -5,7 +5,7 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{63F6BD07-F915-4195-94BD-CE84A9D59060}</ProjectGuid>
-    <OutputType>WinExe</OutputType>
+    <OutputType>Exe</OutputType>
     <RootNamespace>tic_tac_toe</RootNamespace>
     <AssemblyName>tictactoe!</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
