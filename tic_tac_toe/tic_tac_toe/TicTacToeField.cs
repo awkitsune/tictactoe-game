@@ -59,18 +59,19 @@ namespace tic_tac_toe
                 {
                     _weights[i, j] = 0.0;
                     _field[i, j] = 0;
-                    Console.Write($"{_weights[i, j]}    ");
                 }
-                Console.WriteLine();
             }
         }
 
         public void PlayerDraw(int x, int y)
         {
+            Console.Clear();
             if (_field[x, y] == 0)
             {
                 _field[x, y] = 2;
                 Console.WriteLine($"Placed user's zero to {x}, {y}");
+                PrintField();
+
                 if (!CheckForWin(true))
                 { 
                     _isWinned = false;
@@ -126,6 +127,7 @@ namespace tic_tac_toe
                 _isWinned = true;
                 _isPlayerWinned = false;
             }
+            PrintField();
             ClearWeights();
         }
         void FindPosition()
@@ -139,7 +141,7 @@ namespace tic_tac_toe
                     _weights[j, i] = GetFreeCells(_field[j, i]);
                 }
             }
-            PrintFields();
+            PrintWeights();
 
             for (int i = 0; i < 3; i++)
             {
@@ -169,12 +171,12 @@ namespace tic_tac_toe
                     }
                 }
             }
-            PrintFields();
+            PrintWeights();
 
             //searching for player's combinations 2 make ai supress it
             Console.WriteLine("Searching for player's winnable combinations to preserve it...");
 
-            Console.WriteLine("Searching in horisontal positions...");
+            Console.WriteLine("Searching in vertical positions...");
             for (int i = 0; i < 3; i++)
             {
                 for (int j = 0; j < 3; j++)
@@ -192,9 +194,9 @@ namespace tic_tac_toe
                     }
                 }
             }
-            PrintFields();
+            PrintWeights();
 
-            Console.WriteLine("Searching in vertical positions...");
+            Console.WriteLine("Searching in horizontal positions...");
             for (int i = 0; i < 3; i++)
             {
                 for (int j = 0; j < 3; j++)
@@ -212,7 +214,7 @@ namespace tic_tac_toe
                     }
                 }
             }
-            PrintFields();
+            PrintWeights();
 
             Console.WriteLine("Searching in main diagonal positions...");
 
@@ -225,7 +227,7 @@ namespace tic_tac_toe
                 }
             }
 
-            PrintFields();
+            PrintWeights();
 
             Console.WriteLine("Searching in additional diagonal positions...");
 
@@ -238,7 +240,7 @@ namespace tic_tac_toe
                 }
             }
 
-            PrintFields();
+            PrintWeights();
 
             //searching for 2-len ai's chains (yes, there's some shitcode) pls dont watch it
             {
@@ -326,11 +328,11 @@ namespace tic_tac_toe
                 {
                     if (_field[i, j] == 0)
                     {
-                        _weights[i, j] += (double)rnd_cell.Next(0, 12) / 100;
+                        _weights[i, j] += (double)rnd_cell.Next(0, 123) / 1000;
                     }
                 }
             }
-            PrintFields();
+            PrintWeights();
         }
         double GetFreeCells(int who)
         {
@@ -385,21 +387,38 @@ namespace tic_tac_toe
             }
         }
 
-        void PrintFields()
-        {
+        void PrintWeights()
+        {   Console.WriteLine("_weights: ");
+
             for (int i = 0; i < 3; i++)
             {
                 for (int j = 0; j < 3; j++)
                 {
-                    Console.Write($"{_field[i, j]}\t");
-                }
-                Console.Write("\t\t");
-                for (int j = 0; j < 3; j++)
-                {
-                    Console.Write($"{_weights[i, j]}\t");
+                    Console.Write($" {_weights[j, i]:F3} |");
                 }
                 Console.WriteLine();
             }
+
+            Console.WriteLine();
+        }
+
+        void PrintField()
+        {
+            Console.WriteLine("_field: ");
+
+            for (int i = 0; i < 3; i++)
+            {
+                for (int j = 0; j < 3; j++)
+                {
+                    string str = $"   {_field[j, i]}   |";
+                    str = str.Replace('2', 'o');
+                    str = str.Replace('1', 'x');
+                    str = str.Replace('0', ' ');
+                    Console.Write(str);
+                }
+                Console.WriteLine();
+            }
+
             Console.WriteLine();
         }
 
