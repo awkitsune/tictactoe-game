@@ -7,6 +7,8 @@ namespace tic_tac_toe
 {
     public partial class Form1 : Form
     {
+        string saveName = "userdata.dat";
+
         Move move = new Move();
         TicTacToeField field = new TicTacToeField();
 
@@ -76,8 +78,8 @@ namespace tic_tac_toe
             catch (FileNotFoundException)
             {
                 DialogResult result = MessageBox.Show(
-                        "Buttons pictures are corrupted or not exist, check game folder!",
-                        "Oh, no!",
+                        "Картинки для кнопок отсутствуют, скопируйте их вручную и перезапустите игру!",
+                        "О, нет!",
                         MessageBoxButtons.OK,
                         MessageBoxIcon.Warning,
                         MessageBoxDefaultButton.Button1);
@@ -107,34 +109,47 @@ namespace tic_tac_toe
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            if (File.Exists("userdata.dat"))
+            button_0_0.BackColor = Color.FromArgb(16, Color.Black);
+            button_0_1.BackColor = Color.FromArgb(16, Color.Black);
+            button_0_2.BackColor = Color.FromArgb(16, Color.Black);
+            button_1_0.BackColor = Color.FromArgb(16, Color.Black);
+            button_1_1.BackColor = Color.FromArgb(16, Color.Black);
+            button_1_2.BackColor = Color.FromArgb(16, Color.Black);
+            button_2_0.BackColor = Color.FromArgb(16, Color.Black);
+            button_2_1.BackColor = Color.FromArgb(16, Color.Black);
+            button_2_2.BackColor = Color.FromArgb(16, Color.Black);
+
+            if (File.Exists(saveName))
             {
                 try
                 {
-                    using (BinaryReader file = new BinaryReader(File.OpenRead("userdata.dat")))
+                    using (BinaryReader file = new BinaryReader(File.OpenRead(saveName)))
                     {
                         username = file.ReadString();
                         wins = file.ReadInt32();
                         loses = file.ReadInt32();
+
                         label_username.Text = username;
                         panel_userdata.Visible = true;
                         panel_login.Visible = false;
                         button_restart.Enabled = true;
                         label_wins_loses.Visible = true;
+
+                        textBox_username.Text = username;
                     }
                 }
                 catch (IOException)
                 {
                     DialogResult result = MessageBox.Show(
-                        "I cant read your username, would you like to delete it?",
-                        "Oh, no!",
+                        "Я не могу прочитать информацию об игроке, удалить файл?",
+                        "О, нет!",
                         MessageBoxButtons.YesNo,
                         MessageBoxIcon.Warning,
                         MessageBoxDefaultButton.Button1);
 
                     if (result == DialogResult.Yes)
                     {
-                        File.Delete("userdata.dat");
+                        File.Delete(saveName);
                     }
                     else
                     {
@@ -142,8 +157,24 @@ namespace tic_tac_toe
                     }
                 }
             }
+            else
+            {
+                DialogResult result = MessageBox.Show(
+                    "Похоже, вы запустили игру в первый раз. Показать правила?", 
+                    "Первый запуск", 
+                    MessageBoxButtons.YesNo, 
+                    MessageBoxIcon.Question);
+                if (result == DialogResult.Yes)
+                {
+                    Rules rules = new Rules();
+                    rules.ShowDialog();
+                    rules.Dispose();
+                }
+            }
+
             UpdateWinLose();
         }
+
         private void button_login_Click(object sender, EventArgs e)
         {
             if (textBox_username.Text.Length > 0)
@@ -167,12 +198,12 @@ namespace tic_tac_toe
         private void button_restart_Click(object sender, EventArgs e)
         {
             panel_game.Enabled = true;
-            button_restart.Text = "Restart?";
+            button_restart.Text = "Перезапустить?";
             if (!field.GetWinState())
             {
                 DialogResult result = MessageBox.Show(
-                        "Do you really would like to restart your game?", 
-                        "Restart?", 
+                        "Вы реально хотите перезапустить игру?", 
+                        "Подтверждение", 
                         MessageBoxButtons.YesNo, 
                         MessageBoxIcon.Question, 
                         MessageBoxDefaultButton.Button2);
@@ -195,24 +226,34 @@ namespace tic_tac_toe
 
         private void Form1_FormClosing(Object sender, FormClosingEventArgs e)
         {
-            try
+            if (textBox_username.Text != "")
             {
-                using (BinaryWriter file = new BinaryWriter(File.OpenWrite("userdata.dat")))
+                try
                 {
-                    file.Write(username);
-                    file.Write(wins);
-                    file.Write(loses);
+                    using (BinaryWriter file = new BinaryWriter(File.OpenWrite(saveName)))
+                    {
+                        file.Write(username);
+                        file.Write(wins);
+                        file.Write(loses);
+                    }
+                }
+                catch (IOException)
+                {
+                    MessageBox.Show(
+                        "Произошла ошибка при сохранении данных", 
+                        "О, нет!", 
+                        MessageBoxButtons.OK, 
+                        MessageBoxIcon.Error);
+
                 }
             }
-            catch (IOException)
-            {
 
-            }
+            Application.OpenForms[0].Close();
         }
 
         void UpdateWinLose()
         { 
-            label_wins_loses.Text = $"Wins: {wins}, Loses: {loses}";
+            label_wins_loses.Text = $"Побед: {wins}, Поражений: {loses}";
         }
         bool CheckWhoWin() //returns true if player, false if computer
         {
@@ -358,6 +399,14 @@ namespace tic_tac_toe
         {
             About about = new About();
             about.ShowDialog();
+            about.Dispose();
+        }
+
+        private void button_rulezzz_Click(object sender, EventArgs e)
+        {
+            Rules rules = new Rules();
+            rules.ShowDialog();
+            rules.Dispose();
         }
     }
 }

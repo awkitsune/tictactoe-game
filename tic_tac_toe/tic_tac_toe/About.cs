@@ -27,9 +27,9 @@ namespace tic_tac_toe
             int index = comboBox_rps.SelectedIndex;
             switch (index)
             {
-                case 0: label_answer.Text = "Computer says paper"; break;
-                case 1: label_answer.Text = "Computer says scissors"; break;
-                case 2: label_answer.Text = "Computer says rock"; break;
+                case 0: label_answer.Text = "Компьютер отвечает бумагой"; break;
+                case 1: label_answer.Text = "Компьютер отвечает ножницами"; break;
+                case 2: label_answer.Text = "Компьютер отвечает камнем"; break;
                 default:
                     break;
             }

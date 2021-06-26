@@ -65,7 +65,6 @@ namespace tic_tac_toe
 
         public void PlayerDraw(int x, int y)
         {
-            Console.Clear();
             if (_field[x, y] == 0)
             {
                 _field[x, y] = 2;

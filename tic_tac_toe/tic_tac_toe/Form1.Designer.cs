@@ -34,6 +34,12 @@ namespace tic_tac_toe
             this.label_vs_who = new System.Windows.Forms.Label();
             this.button_restart = new System.Windows.Forms.Button();
             this.button_about = new System.Windows.Forms.Button();
+            this.panel_login = new System.Windows.Forms.Panel();
+            this.button_login = new System.Windows.Forms.Button();
+            this.textBox_username = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.panel_userdata = new System.Windows.Forms.Panel();
+            this.label_wins_loses = new System.Windows.Forms.Label();
             this.panel_game = new System.Windows.Forms.Panel();
             this.button_0_0 = new System.Windows.Forms.Button();
             this.button_2_2 = new System.Windows.Forms.Button();
@@ -44,15 +50,10 @@ namespace tic_tac_toe
             this.button_0_1 = new System.Windows.Forms.Button();
             this.button_2_1 = new System.Windows.Forms.Button();
             this.button_1_1 = new System.Windows.Forms.Button();
-            this.panel_login = new System.Windows.Forms.Panel();
-            this.button_login = new System.Windows.Forms.Button();
-            this.textBox_username = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.panel_userdata = new System.Windows.Forms.Panel();
-            this.label_wins_loses = new System.Windows.Forms.Label();
-            this.panel_game.SuspendLayout();
+            this.button_rulezzz = new System.Windows.Forms.Button();
             this.panel_login.SuspendLayout();
             this.panel_userdata.SuspendLayout();
+            this.panel_game.SuspendLayout();
             this.SuspendLayout();
             // 
             // label_username
@@ -79,6 +80,44 @@ namespace tic_tac_toe
             this.button_about.Name = "button_about";
             this.button_about.UseVisualStyleBackColor = true;
             this.button_about.Click += new System.EventHandler(this.button_about_Click);
+            // 
+            // panel_login
+            // 
+            resources.ApplyResources(this.panel_login, "panel_login");
+            this.panel_login.Controls.Add(this.button_login);
+            this.panel_login.Controls.Add(this.textBox_username);
+            this.panel_login.Controls.Add(this.label1);
+            this.panel_login.Name = "panel_login";
+            // 
+            // button_login
+            // 
+            resources.ApplyResources(this.button_login, "button_login");
+            this.button_login.Name = "button_login";
+            this.button_login.UseVisualStyleBackColor = true;
+            this.button_login.Click += new System.EventHandler(this.button_login_Click);
+            // 
+            // textBox_username
+            // 
+            resources.ApplyResources(this.textBox_username, "textBox_username");
+            this.textBox_username.Name = "textBox_username";
+            // 
+            // label1
+            // 
+            resources.ApplyResources(this.label1, "label1");
+            this.label1.Name = "label1";
+            // 
+            // panel_userdata
+            // 
+            this.panel_userdata.Controls.Add(this.label_wins_loses);
+            this.panel_userdata.Controls.Add(this.label_username);
+            this.panel_userdata.Controls.Add(this.label_vs_who);
+            resources.ApplyResources(this.panel_userdata, "panel_userdata");
+            this.panel_userdata.Name = "panel_userdata";
+            // 
+            // label_wins_loses
+            // 
+            resources.ApplyResources(this.label_wins_loses, "label_wins_loses");
+            this.label_wins_loses.Name = "label_wins_loses";
             // 
             // panel_game
             // 
@@ -205,49 +244,19 @@ namespace tic_tac_toe
             this.button_1_1.UseVisualStyleBackColor = false;
             this.button_1_1.Click += new System.EventHandler(this.button_1_1_Click);
             // 
-            // panel_login
+            // button_rulezzz
             // 
-            resources.ApplyResources(this.panel_login, "panel_login");
-            this.panel_login.Controls.Add(this.button_login);
-            this.panel_login.Controls.Add(this.textBox_username);
-            this.panel_login.Controls.Add(this.label1);
-            this.panel_login.Name = "panel_login";
-            // 
-            // button_login
-            // 
-            resources.ApplyResources(this.button_login, "button_login");
-            this.button_login.Name = "button_login";
-            this.button_login.UseVisualStyleBackColor = true;
-            this.button_login.Click += new System.EventHandler(this.button_login_Click);
-            // 
-            // textBox_username
-            // 
-            resources.ApplyResources(this.textBox_username, "textBox_username");
-            this.textBox_username.Name = "textBox_username";
-            // 
-            // label1
-            // 
-            resources.ApplyResources(this.label1, "label1");
-            this.label1.Name = "label1";
-            // 
-            // panel_userdata
-            // 
-            this.panel_userdata.Controls.Add(this.label_wins_loses);
-            this.panel_userdata.Controls.Add(this.label_username);
-            this.panel_userdata.Controls.Add(this.label_vs_who);
-            resources.ApplyResources(this.panel_userdata, "panel_userdata");
-            this.panel_userdata.Name = "panel_userdata";
-            // 
-            // label_wins_loses
-            // 
-            resources.ApplyResources(this.label_wins_loses, "label_wins_loses");
-            this.label_wins_loses.Name = "label_wins_loses";
+            resources.ApplyResources(this.button_rulezzz, "button_rulezzz");
+            this.button_rulezzz.Name = "button_rulezzz";
+            this.button_rulezzz.UseVisualStyleBackColor = true;
+            this.button_rulezzz.Click += new System.EventHandler(this.button_rulezzz_Click);
             // 
             // Form1
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
+            this.Controls.Add(this.button_rulezzz);
             this.Controls.Add(this.panel_userdata);
             this.Controls.Add(this.panel_login);
             this.Controls.Add(this.button_about);
@@ -259,11 +268,11 @@ namespace tic_tac_toe
             this.Name = "Form1";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.Load += new System.EventHandler(this.Form1_Load);
-            this.panel_game.ResumeLayout(false);
             this.panel_login.ResumeLayout(false);
             this.panel_login.PerformLayout();
             this.panel_userdata.ResumeLayout(false);
             this.panel_userdata.PerformLayout();
+            this.panel_game.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -291,6 +300,7 @@ namespace tic_tac_toe
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel_userdata;
         private System.Windows.Forms.Label label_wins_loses;
+        private System.Windows.Forms.Button button_rulezzz;
     }
 }
 
