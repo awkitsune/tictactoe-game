@@ -40,6 +40,7 @@ namespace tic_tac_toe
             this.label1 = new System.Windows.Forms.Label();
             this.panel_userdata = new System.Windows.Forms.Panel();
             this.label_wins_loses = new System.Windows.Forms.Label();
+            this.button_rulezzz = new System.Windows.Forms.Button();
             this.panel_game = new System.Windows.Forms.Panel();
             this.button_0_0 = new System.Windows.Forms.Button();
             this.button_2_2 = new System.Windows.Forms.Button();
@@ -50,7 +51,6 @@ namespace tic_tac_toe
             this.button_0_1 = new System.Windows.Forms.Button();
             this.button_2_1 = new System.Windows.Forms.Button();
             this.button_1_1 = new System.Windows.Forms.Button();
-            this.button_rulezzz = new System.Windows.Forms.Button();
             this.panel_login.SuspendLayout();
             this.panel_userdata.SuspendLayout();
             this.panel_game.SuspendLayout();
@@ -118,6 +118,13 @@ namespace tic_tac_toe
             // 
             resources.ApplyResources(this.label_wins_loses, "label_wins_loses");
             this.label_wins_loses.Name = "label_wins_loses";
+            // 
+            // button_rulezzz
+            // 
+            resources.ApplyResources(this.button_rulezzz, "button_rulezzz");
+            this.button_rulezzz.Name = "button_rulezzz";
+            this.button_rulezzz.UseVisualStyleBackColor = true;
+            this.button_rulezzz.Click += new System.EventHandler(this.button_rulezzz_Click);
             // 
             // panel_game
             // 
@@ -243,13 +250,6 @@ namespace tic_tac_toe
             this.button_1_1.Name = "button_1_1";
             this.button_1_1.UseVisualStyleBackColor = false;
             this.button_1_1.Click += new System.EventHandler(this.button_1_1_Click);
-            // 
-            // button_rulezzz
-            // 
-            resources.ApplyResources(this.button_rulezzz, "button_rulezzz");
-            this.button_rulezzz.Name = "button_rulezzz";
-            this.button_rulezzz.UseVisualStyleBackColor = true;
-            this.button_rulezzz.Click += new System.EventHandler(this.button_rulezzz_Click);
             // 
             // Form1
             // 

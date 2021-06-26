@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading;
 using System.Drawing;
 using System.Windows.Forms;
 using System.IO;
@@ -109,6 +110,12 @@ namespace tic_tac_toe
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            this.Hide();
+            Splash splash = new Splash();
+            splash.ShowDialog();
+            splash.Dispose();
+
+
             button_0_0.BackColor = Color.FromArgb(16, Color.Black);
             button_0_1.BackColor = Color.FromArgb(16, Color.Black);
             button_0_2.BackColor = Color.FromArgb(16, Color.Black);
@@ -171,6 +178,8 @@ namespace tic_tac_toe
                     rules.Dispose();
                 }
             }
+
+            this.Show();
 
             UpdateWinLose();
         }
@@ -248,7 +257,7 @@ namespace tic_tac_toe
                 }
             }
 
-            Application.OpenForms[0].Close();
+            //Application.OpenForms[0].Close();
         }
 
         void UpdateWinLose()
