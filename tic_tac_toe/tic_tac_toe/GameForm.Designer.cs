@@ -1,7 +1,7 @@
 ﻿
 namespace tic_tac_toe
 {
-    partial class Form1
+    partial class GameForm
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@ namespace tic_tac_toe
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GameForm));
             this.label_username = new System.Windows.Forms.Label();
             this.label_vs_who = new System.Windows.Forms.Label();
             this.button_restart = new System.Windows.Forms.Button();
@@ -251,7 +251,7 @@ namespace tic_tac_toe
             this.button_1_1.UseVisualStyleBackColor = false;
             this.button_1_1.Click += new System.EventHandler(this.button_1_1_Click);
             // 
-            // Form1
+            // GameForm
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -265,7 +265,7 @@ namespace tic_tac_toe
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "Form1";
+            this.Name = "GameForm";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel_login.ResumeLayout(false);

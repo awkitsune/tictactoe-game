@@ -1,12 +1,11 @@
 ﻿using System;
-using System.Threading;
 using System.Drawing;
 using System.Windows.Forms;
 using System.IO;
 
 namespace tic_tac_toe
 {
-    public partial class Form1 : Form
+    public partial class GameForm : Form
     {
         string saveName = "userdata.dat";
 
@@ -93,7 +92,7 @@ namespace tic_tac_toe
 
         }
 
-        public Form1()
+        public GameForm()
         {
             InitializeComponent();
 
@@ -173,7 +172,7 @@ namespace tic_tac_toe
                     MessageBoxIcon.Question);
                 if (result == DialogResult.Yes)
                 {
-                    Rules rules = new Rules();
+                    RulesForm rules = new RulesForm();
                     rules.ShowDialog();
                     rules.Dispose();
                 }
@@ -406,14 +405,14 @@ namespace tic_tac_toe
 
         private void button_about_Click(object sender, EventArgs e)
         {
-            About about = new About();
+            AboutForm about = new AboutForm();
             about.ShowDialog();
             about.Dispose();
         }
 
         private void button_rulezzz_Click(object sender, EventArgs e)
         {
-            Rules rules = new Rules();
+            RulesForm rules = new RulesForm();
             rules.ShowDialog();
             rules.Dispose();
         }

@@ -1,18 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace tic_tac_toe
 {
-    public partial class Rules : Form
+    public partial class RulesForm : Form
     {
-        public Rules()
+        public RulesForm()
         {
             InitializeComponent();
         }

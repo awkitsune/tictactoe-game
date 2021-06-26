@@ -1,7 +1,7 @@
 ﻿
 namespace tic_tac_toe
 {
-    partial class Rules
+    partial class RulesForm
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@ namespace tic_tac_toe
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Rules));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RulesForm));
             this.label1 = new System.Windows.Forms.Label();
             this.textBoxRules = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
