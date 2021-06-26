@@ -276,8 +276,8 @@ namespace tic_tac_toe
             if (field.GetWinState() && CheckWhoWin())
             {
                 MessageBox.Show(
-                    "Player won!",
-                    "Game end",
+                    "Победил игрок!",
+                    "Конец игры",
                     MessageBoxButtons.OK,
                     MessageBoxIcon.Information);
                 wins++;
@@ -286,8 +286,8 @@ namespace tic_tac_toe
             if (field.GetWinState() && !CheckWhoWin())
             {
                 MessageBox.Show(
-                    "Computer won!",
-                    "Game end",
+                    "Победил компьютер!",
+                    "Конец игры",
                     MessageBoxButtons.OK,
                     MessageBoxIcon.Information);
                 loses++;

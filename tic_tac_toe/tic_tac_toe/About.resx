@@ -244,13 +244,13 @@
     <value>1</value>
   </data>
   <data name="comboBox_rps.Items" xml:space="preserve">
-    <value>Rock</value>
+    <value>Камень</value>
   </data>
   <data name="comboBox_rps.Items1" xml:space="preserve">
-    <value>Paper</value>
+    <value>Ножницы</value>
   </data>
   <data name="comboBox_rps.Items2" xml:space="preserve">
-    <value>Scissors</value>
+    <value>Бумага</value>
   </data>
   <data name="comboBox_rps.Location" type="System.Drawing.Point, System.Drawing">
     <value>9, 36</value>
